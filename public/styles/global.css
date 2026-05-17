@@ -258,8 +258,13 @@ code {
 }
 
 .about-section {
+  display: none;
   scroll-margin-top: 96px;
   margin-bottom: 44px;
+}
+
+.about-section.active {
+  display: block;
 }
 
 .about-section h2 {
@@ -319,4 +324,21 @@ code {
     padding: 0 16px;
     font-size: 14px;
   }
+}
+
+.about-section {
+  display: none;
+  scroll-margin-top: 96px;
+  margin-bottom: 44px;
+}
+
+.about-section.active {
+  display: block;
+}
+
+.about-more-link {
+  margin-top: 6px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
 }
