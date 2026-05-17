@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 5);
+---
+
+<BaseLayout title="rlatjwls7882">
+  <section class="hero">
+    <p class="eyebrow">Competitive Programmer · Backend Developer</p>
+    <h1>기록을 쌓는 기술 블로그</h1>
+    <p>
+      알고리즘, 백엔드, DevOps, SOJ 개발기, 실험/논문 작업을 정리합니다.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>Recent Posts</h2>
+      <a href="/blog">전체 글 보기</a>
+    </div>
+
+    <div class="post-list">
+      {posts.map((post) => (
+        <article class="post-card">
+          <a href={`/blog/${post.id.replace(/\/index$/, '')}`}>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <div class="meta">
+              <span>{post.data.category}</span>
+              <time datetime={post.data.pubDate.toISOString()}>
+                {post.data.pubDate.toLocaleDateString('ko-KR')}
+              </time>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
