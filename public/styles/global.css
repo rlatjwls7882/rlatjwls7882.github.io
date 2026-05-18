@@ -7,6 +7,46 @@
   --accent: #2563eb;
 }
 
+.tier-b {
+  color: #ad5600;
+  font-weight: 700;
+}
+
+.tier-s {
+  color: #435f7a;
+  font-weight: 700;
+}
+
+.tier-g {
+  color: #ec9a00;
+  font-weight: 700;
+}
+
+.tier-p {
+  color: #57bb8a;
+  font-weight: 700;
+}
+
+.tier-d {
+  color: #00b4fc;
+  font-weight: 700;
+}
+
+.tier-r {
+  color: #ff0062;
+  font-weight: 700;
+}
+
+.result-ac {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.result-wa {
+  color: #dc2626;
+  font-weight: 700;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -402,4 +442,23 @@ code {
 
 .category-item small {
   color: var(--muted);
+}
+
+.article img {
+  max-width: min(100%, 560px);
+  height: auto;
+  display: block;
+  margin: 32px auto;
+  border-radius: 12px;
+}
+
+.article figure {
+  margin: 32px 0;
+}
+
+.article figcaption {
+  margin-top: 8px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
 }
