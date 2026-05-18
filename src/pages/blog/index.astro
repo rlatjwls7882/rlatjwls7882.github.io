@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { getPostCategory, getPostUrl } from '../../utils/post';
 
 const posts = (await getCollection('blog'))
   .filter((post) => !post.data.draft)
@@ -13,9 +14,17 @@ const posts = (await getCollection('blog'))
   <div class="post-list">
     {posts.map((post) => (
       <article class="post-card">
-        <a href={`/blog/${post.id.replace(/\/index$/, '')}`}>
+        <a href={getPostUrl(post.id)}>
           <h2>{post.data.title}</h2>
           <p>{post.data.description}</p>
+
+          <div class="meta">
+            <span>{post.data.category ?? getPostCategory(post.id)}</span>
+            <time datetime={post.data.pubDate.toISOString()}>
+              {post.data.pubDate.toLocaleDateString('ko-KR')}
+            </time>
+          </div>
+
           <div class="tags">
             {post.data.tags.map((tag) => <span>#{tag}</span>)}
           </div>
