@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { countBy, getCategoryUrl, getPostCategory, getSortedCategories } from '../../utils/post';
+
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft);
+
+const categories = getSortedCategories(posts);
+const categoryCount = countBy(posts.map((post) => post.data.category ?? getPostCategory(post.id)));
+---
+
+<BaseLayout title="카테고리">
+  <section class="taxonomy-page">
+    <h1>카테고리</h1>
+    <p>총 {categories.length}개의 카테고리</p>
+
+    <div class="category-list">
+      {categories.map((category) => (
+        <a href={getCategoryUrl(category)} class="category-item">
+          <span>{category}</span>
+          <small>{categoryCount[category]}개의 글</small>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

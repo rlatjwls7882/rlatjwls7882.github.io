@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { getCategoryUrl, getPostCategory, getPostUrl, getSortedCategories } from '../../utils/post';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  const categories = getSortedCategories(posts);
+
+  return categories.map((category) => ({
+    params: { category },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .filter((post) => (post.data.category ?? getPostCategory(post.id)) === category)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout title={`${category} 카테고리`}>
+  <section class="taxonomy-page">
+    <h1>{category}</h1>
+    <p>{posts.length}개의 글</p>
+
+    <div class="post-list">
+      {posts.map((post) => (
+        <article class="post-card">
+          <a href={getPostUrl(post.id)}>
+            <h2>{post.data.title}</h2>
+
+            <div class="meta">
+              <time datetime={post.data.pubDate.toISOString()}>
+                {post.data.pubDate.toLocaleDateString('ko-KR')}
+              </time>
+            </div>
+
+            <div class="tags">
+              {post.data.tags.map((tag) => <span>#{tag}</span>)}
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
