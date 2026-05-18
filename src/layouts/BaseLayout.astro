@@ -2,8 +2,7 @@
 import 'katex/dist/katex.min.css';
 
 const {
-  title = 'rlatjwls7882',
-  description = '',
+  title = 'rlatjwls7882가 PS하는 블로그',
 } = Astro.props;
 ---
 
@@ -11,7 +10,6 @@ const {
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <link rel="stylesheet" href="/styles/global.css" />
@@ -20,8 +18,8 @@ const {
     <header class="site-header">
       <a class="logo" href="/">rlatjwls7882</a>
       <nav>
-        <a href="/blog">Blog</a>
-        <a href="/about">About</a>
+        <a href="/blog">전체글</a>
+        <a href="/about">소개</a>
       </nav>
     </header>
 
