@@ -6,7 +6,9 @@
   },
   "dependencies": {
     "@astrojs/mdx": "latest",
-    "astro": "latest"
-  },
-  "devDependencies": {}
+    "astro": "latest",
+    "katex": "^0.16.47",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
+  }
 }
