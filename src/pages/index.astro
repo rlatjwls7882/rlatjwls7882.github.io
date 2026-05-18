@@ -40,4 +40,11 @@ const posts = (await getCollection('blog'))
       ))}
     </div>
   </section>
+  <script>
+    const debugPosts = posts.map((post) => ({
+      id: post.id,
+      title: post.data.title,
+      draft: post.data.draft,
+    }));
+  </script>
 </BaseLayout>
