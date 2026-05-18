@@ -342,3 +342,64 @@ code {
   font-size: 14px;
   font-weight: 700;
 }
+
+.taxonomy-page {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.taxonomy-page h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: -0.04em;
+}
+
+.taxonomy-page > p {
+  margin-bottom: 42px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 22px;
+}
+
+.tag-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  border-bottom: 1px solid #aeb4bd;
+  font-size: 20px;
+}
+
+.tag-item small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.category-list {
+  display: grid;
+  gap: 14px;
+}
+
+.category-item {
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+}
+
+.category-item span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.category-item small {
+  color: var(--muted);
+}

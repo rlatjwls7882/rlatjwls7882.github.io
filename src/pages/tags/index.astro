@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { getSortedTags, getTagUrl, countBy } from '../../utils/post';
+
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft);
+
+const tags = getSortedTags(posts);
+const tagCount = countBy(posts.flatMap((post) => post.data.tags));
+---
+
+<BaseLayout title="태그">
+  <section class="taxonomy-page">
+    <h1>태그</h1>
+    <p>총 {tags.length}개의 태그</p>
+
+    <div class="tag-cloud">
+      {tags.map((tag) => (
+        <a href={getTagUrl(tag)} class="tag-item">
+          <span>{tag}</span>
+          <small>{tagCount[tag]}</small>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
