@@ -10,10 +10,6 @@ const posts = (await getCollection('blog'))
 ---
 
 <BaseLayout>
-  <section class="hero">
-    <h2>rlatjwls7882이 PS하는 블로그</h2>
-  </section>
-
   <section>
     <div class="post-list">
       {posts.map((post) => (
