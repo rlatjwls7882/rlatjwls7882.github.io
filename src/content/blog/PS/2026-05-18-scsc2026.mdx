@@ -1,0 +1,114 @@
+---
+title: "2026 서울대학교 SCSC 프로그래밍 경시대회 후기"
+pubDate: 2026-05-18
+tags: ["후기"]
+---
+
+![scsc1](/images/2026-05-18/scsc1.png)
+
+혼자 쓸쓸하게 밥먹고 대회치다 돌아올 생각이었는데 좋은 기회가 생겼습니다.
+
+하지만 당일 오신다던 분들이 다 늦게 오셔서 다른 파티에 합류하여 <span class="tier-d">cohenpf</span> <span class="tier-d">cohenpf</span>님, <span class="tier-d">oh040411</span>님, <span class="tier-d">bluerini님</span>, <span class="tier-r">dongggle</span>님과 총 5명이서 삼백돈에서 밥을 먹고 ~~뒤늦게 합류한 <span class="tier-p">toycartoon</span>님과 함께~~ 대회장으로 출발했습니다.
+
+![scsc2](/images/2026-05-18/scsc2.jpg)
+
+rlatjwls3333이라는 닉네임으로 대회에 참가했습니다. ~~(스코어보드에는 rlatjwls7882였지만)~~ 대회장에 도착해서 굿즈를 쌀먹하고, <span class="tier-d">cohenpf</span>님 옆에 앉아서 대회를 쳤습니다. 한 가지 이슈는 밖에 정수기는 있지만, 컵이 없었어서 대회가 시작하기 전에 빠르게 컵을 사러 다녀왔습니다. 빠르게 갔다왔는데 이때가 대회 시작 2분 전이었네요.
+
+A - Mobilint Tensor Scheduling (REGULUS) - 24:43 <span class="result-ac">AC</span>
+
+이 문제를 이해하는데 시간이 오래걸렸습니다. N=5000이기에 DFS 한번 해서 리프 노드를 전부 셋에 담아 그리디하게 선택하면서 올라가면 될것 같았고 AC를 받았습니다. 스코어보드의 모두가 빨리 풀기에 요즘 참가한 대회들이 하나같이 성적이 안좋았어서 이제는 진짜 PS를 접을 준비를 했었죠. ~~이 문제 W 제한이 1이라는 사실은 대회가 끝나고 알게 되었다...~~
+
+F - The Kth Smallest Number - 38:29 <span class="result-wa">WA</span>
+
+이후에 만들어지는 수들이 주기성을 띄는건 자명하기 때문에 무지성 Splay Tree 복붙을 했지만 틀렸습니다.
+
+F - The Kth Smallest Number - 40:59 <span class="result-wa">WA</span>
+
+$K<N$인 경우 케이스워크를 빼먹어서 추가했지만 틀렸습니다.
+
+F - The Kth Smallest Number - 48:19 <span class="result-wa">WA</span>
+
+코드를 다시 보니 K번째로 작은 수가 아닌 K번째로 넣은 수를 출력하고 있었습니다... 스코어 보드를 보니 아무리 봐도 쉬운 문제 같아서 예제를 시뮬레이션해봤는데, 같은 수밖에 나오지 않는다는 점을 바로 알 수 있었습니다. ~~한번만 예제 시뮬레이션 해볼걸...~~ 그래서 제출했지만 실수로 $K<N$ 케이스워크까지 삭제해서 한번 더 틀렸습니다.
+
+F - The Kth Smallest Number - 51:06 <span class="result-ac">AC</span>
+
+그걸 고쳐서 바로 맞았습니다.
+
+J - DETOX - 61:51 <span class="result-ac">AC</span>
+
+첫번째로 손을 드는 사람만 고르면 나머지 사람들 순서는 매우 빨리 구할 수 있음이 자명하니 바로 구현해서 제출했습니다.
+
+C - Rearrangement - 69:37 <span class="result-ac">AC</span>
+
+누가 봐도 KMP 문제였기에 바로 구현해서 제출했습니다.
+
+G - SCSC Game - 79:50 <span class="result-ac">AC</span>
+
+몇 번 그려보니 첫 턴에 SCSC를 만들지 못하면 가능성 있는 문자열을 파괴하는 것이 그리디하고, 그렇기에 홀짝 여부로 판단될 것 같다고 생각했습니다. 대충 날림으로 증명하고 PBA를 했습니다.
+
+![scsc3](/images/2026-05-18/scsc3.png)
+
+이때 등수를 보니 이대로만 풀면 충분히 수상할 수 있을 것 같았습니다.
+
+D - Coloring - 146:22 <span class="result-ac">AC</span>
+
+문제를 보자마자 모스라고 생각했습니다. 짜기 귀찮아서 E 풀다가 다시 돌아왔습니다. 바보같은 실수로 디버깅을 좀 하긴 했지만 전형적인 <span class="tier-d">Diamond IV</span> 덱을 이용한 루트질로 풀었습니다. ~~이게 정해가 아니라고??~~
+
+E - Opening Magical Box - 188:43 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 202:58 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 204:30 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 211:02 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 216:42 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 217:05 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 220:41 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 233:53 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 236:13 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 237:04 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 237:40 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 238:32 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 239:06 <span class="result-wa">WA</span>  
+E - Opening Magical Box - 239:46 <span class="result-wa">WA</span>  
+
+네. 폭사했습니다... 길이가 7인 것까지 모든 경우를 다 그려보았고, 기댓값의 선형성이 자명했는데, 어디서 잘못 구건지 결국 틀렸습니다.
+
+![scsc4](/images/2026-05-18/scsc4.png)
+
+프리즈 순위로는 22등이었고 
+
+![scsc5](/images/2026-05-18/scsc5.png)
+
+최종 순위는 26등으로 마무리했습니다. 3년동안 SCSC div.2를 참가했는데 75등 -> 38등 -> 26등 으로 점점 순위가 높아지는게 기분이 좋네요. 작년에는 좀 풀다가 더이상 풀 수 있는 문제가 없었는데, 이번에는 4시간동안 쉬지 않고 계속 도전해볼 문제가 있어서 더 좋았습니다.
+
+![scsc6](/images/2026-05-18/scsc6.jpg)
+
+대회 종료 후 같은 학교에서 오셔서 Div. 3를 보신 <span class="tier-g">det_hippopus</span>님을 만나 잠깐 이야기를 나눴습니다. 41등으로 마무리를 하셔서 굉장히 아쉬우실것 같았습니다.
+
+![scsc7](/images/2026-05-18/scsc7.jpg)
+
+
+대회 후에 뒷풀이장으로 출발했습니다. 이때 빈 버스에 탑승했는데 SCSC 인원들로 만원이 되어 재밌었던 기억이 있네요. ~~(버스 안 진짜 더웠어요)~~
+
+이번에도 치르치르 2층에서 회식했는데 인원이 너무 많아 무서워서 집에 갈까 고민하다가 <span class="tier-d">cohenpf</span>님 앞에 앉아 <span class="tier-d">sjh1224</span>님 <span class="tier-r">ychangseok</span>님과 같이 먹었습니다.
+
+![scsc8](/images/2026-05-18/scsc8.png)
+![scsc9](/images/2026-05-18/scsc9.png)
+
+여기 음식을 시키면 30분 뒤쯤에 나와서 배고팠네요.
+
+같은 테이블에 앉아있는데 왜 채팅으로 말을 하냐 라고 하시면
+
+![scsc10](/images/2026-05-18/scsc10.png)
+
+네... 그렇습니다. 음식 주문할때 빼곤 거의 말을 안한것 가테요.
+
+9시에 ABC가 시작해서 핸드폰으로 풀어봤는데 이번 ABC는 교육적이고 괜찮은 문제인것 같았습니다. 하지만 Rated일때는 어려운 문제로 나왔으면 하네요.
+
+![scsc11](/images/2026-05-18/scsc11.png)
+
+저희는 조용히 밥만 먹는 테이블이었는데 뒤쪽에서 **세그먼트 트리 게임**으로 술 게임을 하셨어요. 들어보니 구간 쿼리 날리고 특정 노드의 잘못된 값을 말하는 사람이 지는 게임 같았습니다.
+
+![scsc12](/images/2026-05-18/scsc12.png)
+
+생각해보니 **큐 게임**도 하셨네요.
+
+이번 대회로 다시 PS가 재미있어져서 열심히 할 것 같습니다. 대회 운영진분들 마음고생 많이 하셨을 것 같은데 좋은 대회 열어주셔서 감사합니다. ~~내년 대회도 기대할게요~~
