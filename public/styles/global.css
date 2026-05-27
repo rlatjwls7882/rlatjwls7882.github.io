@@ -462,3 +462,34 @@ code {
   color: var(--muted);
   font-size: 14px;
 }
+
+details {
+  margin: 1rem 0;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.article a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+
+.article a:hover {
+  color: #1d4ed8;
+}
+
+.article :not(pre) > code {
+  padding: 0.15em 0.35em;
+  border-radius: 0.35rem;
+  background: #f1f5f9;
+  color: #be123c;
+  font-size: 0.92em;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+}
