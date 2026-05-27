@@ -17,7 +17,7 @@ const { Content } = await render(post);
 const category = post.data.category ?? getPostCategory(post.id);
 ---
 
-<BaseLayout title={`${post.data.title}`} description={post.data.description}>
+<BaseLayout title={`${post.data.title}`}>
   <article class="article">
     <header>
       <p class="eyebrow">{category}</p>
@@ -25,6 +25,10 @@ const category = post.data.category ?? getPostCategory(post.id);
       <time datetime={post.data.pubDate.toISOString()}>
         {post.data.pubDate.toLocaleDateString('ko-KR')}
       </time>
+      
+      <div class="tags">
+        {post.data.tags.map((tag) => <span>#{tag}</span>)}
+      </div>
     </header>
 
     <Content />

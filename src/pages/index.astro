@@ -26,6 +26,10 @@ const posts = (await getCollection('blog'))
                 {post.data.pubDate.toLocaleDateString('ko-KR')}
               </time>
             </div>
+
+            <div class="tags">
+              {post.data.tags.map((tag) => <span>#{tag}</span>)}
+            </div>
           </a>
         </article>
       ))}
