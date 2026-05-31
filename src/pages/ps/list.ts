@@ -9,4 +9,9 @@ export const list = [
     title: 'Stack',
     slug: 'stack',
   },
+  {
+    category: '자료구조',
+    title: 'Queue',
+    slug: 'queue',
+  },
 ] as const
