@@ -19,4 +19,9 @@ export const list = [
     title: 'Deque',
     slug: 'deque',
   },
+  {
+    category: '자료구조',
+    title: 'Set',
+    slug: 'set',
+  },
 ] as const
