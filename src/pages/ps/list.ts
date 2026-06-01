@@ -24,4 +24,9 @@ export const list = [
     title: 'Set',
     slug: 'set',
   },
+  {
+    category: '자료구조',
+    title: 'Map',
+    slug: 'map',
+  },
 ] as const
