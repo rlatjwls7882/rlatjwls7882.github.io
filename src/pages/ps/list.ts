@@ -29,4 +29,9 @@ export const list = [
     title: 'Map',
     slug: 'map',
   },
+  {
+    category: '자료구조',
+    title: 'Priority Queue',
+    slug: 'priority_queue',
+  },
 ] as const
