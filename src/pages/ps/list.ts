@@ -34,4 +34,9 @@ export const list = [
     title: 'Priority Queue',
     slug: 'priority_queue',
   },
+  {
+    category: '자료 구조',
+    title: 'DSU (Disjoint Set Union)',
+    slug: 'dsu',
+  },
 ] as const
