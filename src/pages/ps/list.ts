@@ -5,6 +5,11 @@ export const list = [
     slug: 'vector',
   },
   {
+    category: '정렬',
+    title: 'Sort',
+    slug: 'sort',
+  },
+  {
     category: '자료구조',
     title: 'Stack',
     slug: 'stack',
