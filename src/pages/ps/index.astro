@@ -8,24 +8,33 @@ import { list } from './list'
     <div class="ps">
       <h1>C++로 하는 PS</h1>
 
-      <table>
-        <thead>
-          <tr>
-            <th>분류</th>
-            <th>글</th>
-          </tr>
-        </thead>
-        <tbody>
-          {list.map((item) => (
-            <tr>
-              <td>{item.category}</td>
-              <td>
-                <a href={`/blog/cpp-algorithm/${item.slug}`}>{item.title}</a>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      {list.map((group) => (
+        <section>
+          <h2>{group.title}</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>분류</th>
+                <th>글</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {group.items.map((item) => (
+                <tr>
+                  <td>{item.category}</td>
+                  <td>
+                    <a href={`/blog/cpp-algorithm/${item.slug}`}>
+                      {item.title}
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      ))}
     </div>
   </section>
 </BaseLayout>

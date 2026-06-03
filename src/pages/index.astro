@@ -5,8 +5,7 @@ import { getPostCategory, getPostUrl } from '../utils/post';
 
 const posts = (await getCollection('blog'))
   .filter((post) => !post.data.draft)
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 5);
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <BaseLayout>
@@ -15,13 +14,10 @@ const posts = (await getCollection('blog'))
       {posts.map((post) => (
         <article class="post-card">
           <a href={getPostUrl(post.id)}>
+            <h2>{post.data.title}</h2>
+
             <div class="meta">
               <span>{post.data.category ?? getPostCategory(post.id)}</span>
-            </div>
-
-            <h3>{post.data.title}</h3>
-
-            <div class="meta">
               <time datetime={post.data.pubDate.toISOString()}>
                 {post.data.pubDate.toLocaleDateString('ko-KR')}
               </time>
