@@ -42,10 +42,25 @@ export const list = [
         title: 'Priority Queue',
         slug: 'priority_queue',
       },
+    ],
+  },
+  {
+    title: '중급 알고리즘',
+    items: [
       {
         category: '자료 구조',
         title: 'DSU (Disjoint Set Union)',
         slug: 'dsu',
+      },
+    ],
+  },
+  {
+    title: '고급 알고리즘',
+    items: [
+      {
+        category: '자료 구조',
+        title: 'PBDS (Ordered Set)',
+        slug: 'pbds',
       },
     ],
   },
