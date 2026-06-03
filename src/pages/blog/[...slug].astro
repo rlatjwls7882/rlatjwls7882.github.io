@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { getPostCategory, getPostSlug, getTagUrl } from '../../utils/post';
 import { getPostCategory, getPostSlug } from '../../utils/post';
 
 export async function getStaticPaths() {
@@ -27,7 +28,9 @@ const category = post.data.category ?? getPostCategory(post.id);
       </time>
       
       <div class="tags">
-        {post.data.tags.map((tag) => <span>#{tag}</span>)}
+        {post.data.tags.map((tag) => (
+          <a href={getTagUrl(tag)}>#{tag}</a>
+        ))}
       </div>
     </header>
 

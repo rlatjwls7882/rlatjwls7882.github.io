@@ -174,8 +174,14 @@ nav a:hover {
   font-size: 13px;
 }
 
-.tags span {
+.tags span,
+.tags a {
   color: var(--accent);
+}
+
+.tags a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .grid {
@@ -366,16 +372,6 @@ code {
   }
 }
 
-.about-section {
-  display: none;
-  scroll-margin-top: 96px;
-  margin-bottom: 44px;
-}
-
-.about-section.active {
-  display: block;
-}
-
 .about-more-link {
   margin-top: 6px;
   display: inline-block;
@@ -496,7 +492,7 @@ summary {
 
 .ps {
   max-width: 760px;
-  margin: 120px auto 0;
+  margin: 32px auto 0;
   padding: 0 20px;
 }
 
@@ -532,8 +528,25 @@ summary {
   background: #fafafa;
 }
 
+.ps th:first-child,
+.ps td:first-child {
+  width: 112px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.ps tr:hover {
+  background: #f1f5f9;
+}
+
 .ps a {
-  color: inherit;
+  color: var(--fg);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ps a:hover {
+  color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
