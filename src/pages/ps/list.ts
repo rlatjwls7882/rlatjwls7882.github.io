@@ -46,6 +46,10 @@ export const list = [
         title: 'Priority Queue (우선순위 큐)',
         slug: 'priority_queue',
       },
+      {
+        title: 'Backtracking (백트래킹)',
+        slug: 'backtracking',
+      },
     ],
   },
   {
