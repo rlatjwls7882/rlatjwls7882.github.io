@@ -1,6 +1,27 @@
 ---
+import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import { getPostUrl } from '../../utils/post'
 import { list } from './list'
+
+const posts = await getCollection('blog', ({ data }) => !data.draft)
+
+const postByUrl = new Map(
+  posts.map((post) => [getPostUrl(post.id), post]),
+)
+
+const groups = list.map((group) => ({
+  ...group,
+  items: group.items.map((item) => {
+    const url = `/blog/cpp-algorithm/${item.slug}`
+
+    return {
+      ...item,
+      url,
+      category: postByUrl.get(url)?.data.tags[0] ?? '',
+    }
+  }),
+}))
 ---
 
 <BaseLayout title="C++로 하는 PS">
@@ -8,7 +29,7 @@ import { list } from './list'
     <div class="ps">
       <h1>C++로 하는 PS</h1>
 
-      {list.map((group) => (
+      {groups.map((group) => (
         <section>
           <h2>{group.title}</h2>
 
@@ -25,7 +46,7 @@ import { list } from './list'
                 <tr>
                   <td>{item.category}</td>
                   <td>
-                    <a href={`/blog/cpp-algorithm/${item.slug}`}>
+                    <a href={item.url}>
                       {item.title}
                     </a>
                   </td>
