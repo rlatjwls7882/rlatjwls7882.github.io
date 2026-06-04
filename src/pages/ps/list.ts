@@ -18,6 +18,11 @@ export const list = [
         slug: 'binary_search',
       },
       {
+        category: '누적 합',
+        title: 'Prefix Sum (누적 합)',
+        slug: 'prefix_sum',
+      },
+      {
         category: '자료 구조',
         title: 'Stack',
         slug: 'stack',
