@@ -13,6 +13,11 @@ export const list = [
         slug: 'sort',
       },
       {
+        category: '탐색',
+        title: 'Binary Search (이분 탐색)',
+        slug: 'binary_search',
+      },
+      {
         category: '자료 구조',
         title: 'Stack',
         slug: 'stack',
@@ -39,7 +44,7 @@ export const list = [
       },
       {
         category: '자료 구조',
-        title: 'Priority Queue',
+        title: 'Priority Queue (우선순위 큐)',
         slug: 'priority_queue',
       },
     ],
@@ -49,7 +54,7 @@ export const list = [
     items: [
       {
         category: '자료 구조',
-        title: 'DSU (Disjoint Set Union)',
+        title: 'DSU (Disjoint Set Union, 분리 집합)',
         slug: 'dsu',
       },
     ],
