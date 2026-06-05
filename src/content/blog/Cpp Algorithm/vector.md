@@ -136,7 +136,7 @@ cout << a[i][j];
 
 ## 연습 문제
 
-[C++ Vector](https://soj.services/problems/10)
+[https://soj.services/problems/10](https://soj.services/problems/10)
 
 <details>
 <summary>코드 보기</summary>

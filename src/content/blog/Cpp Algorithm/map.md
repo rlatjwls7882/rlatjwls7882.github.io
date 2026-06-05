@@ -186,7 +186,7 @@ m.erase("apple");
 
 ## 연습 문제
 
-[C++ Map](https://soj.services/problems/12)
+[https://soj.services/problems/12](https://soj.services/problems/12)
 
 <details>
 <summary>코드 보기</summary>

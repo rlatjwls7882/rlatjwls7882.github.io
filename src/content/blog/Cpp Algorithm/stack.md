@@ -88,7 +88,7 @@ if(stk.empty()) {
 
 ## 연습 문제
 
-[C++ Stack](https://soj.services/problems/16)
+[https://soj.services/problems/16](https://soj.services/problems/16)
 
 <details>
 <summary>코드 보기</summary>

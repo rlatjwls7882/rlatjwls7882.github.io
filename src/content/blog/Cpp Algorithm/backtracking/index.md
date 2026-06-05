@@ -112,7 +112,7 @@ if(!canContinue()) return;
 
 ## 연습 문제
 
-[백트래킹](https://soj.services/problems/26)
+[https://soj.services/problems/26](https://soj.services/problems/26)
 
 <details>
 <summary>코드 보기</summary>

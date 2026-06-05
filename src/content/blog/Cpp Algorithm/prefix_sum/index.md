@@ -71,7 +71,7 @@ cout << preSum[r]-preSum[l-1];
 
 ## 연습 문제
 
-[누적 합](https://soj.services/problems/24)
+[https://soj.services/problems/24](https://soj.services/problems/24)
 
 <details>
 <summary>코드 보기</summary>

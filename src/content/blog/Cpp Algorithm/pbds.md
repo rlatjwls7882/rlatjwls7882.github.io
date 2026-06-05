@@ -153,7 +153,7 @@ cout << s.order_of_key({x, -1});
 
 ## 연습 문제
 
-[Ordered Set](https://soj.services/problems/22)
+[https://soj.services/problems/22](https://soj.services/problems/22)
 
 <details>
 <summary>코드 보기</summary>

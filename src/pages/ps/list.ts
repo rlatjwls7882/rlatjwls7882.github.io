@@ -50,6 +50,10 @@ export const list = [
         title: 'Backtracking (백트래킹)',
         slug: 'backtracking',
       },
+      {
+        title: 'DFS (Depth First Search, 깊이 우선 탐색)',
+        slug: 'dfs',
+      },
     ],
   },
   {

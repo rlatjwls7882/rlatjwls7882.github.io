@@ -109,7 +109,7 @@ bool cmp(pair<int, int> a, pair<int, int> b) {
 
 ## 연습 문제
 
-[수 정렬하기 2](https://soj.services/problems/4)
+[https://soj.services/problems/4](https://soj.services/problems/4)
 
 <details>
 <summary>코드 보기</summary>
@@ -196,7 +196,7 @@ cnt[x-minValue]++;
 
 ## 연습 문제
 
-[수 정렬하기 3](https://soj.services/problems/5)
+[https://soj.services/problems/5](https://soj.services/problems/5)
 
 <details>
 <summary>코드 보기</summary>

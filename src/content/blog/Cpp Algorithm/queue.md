@@ -89,7 +89,7 @@ if(q.empty()) {
 
 ## 연습 문제
 
-[C++ Queue](https://soj.services/problems/17)
+[https://soj.services/problems/17](https://soj.services/problems/17)
 
 <details>
 <summary>코드 보기</summary>

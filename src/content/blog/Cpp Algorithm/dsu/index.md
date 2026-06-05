@@ -108,7 +108,7 @@ void merge(int a, int b) {
 
 ## 연습 문제
 
-[DSU](https://soj.services/problems/21)
+[https://soj.services/problems/21](https://soj.services/problems/21)
 
 <details>
 <summary>코드 보기</summary>

@@ -104,7 +104,7 @@ if(deq.empty()) {
 
 ## 연습 문제
 
-[C++ Deque](https://soj.services/problems/19)
+[https://soj.services/problems/19](https://soj.services/problems/19)
 
 <details>
 <summary>코드 보기</summary>

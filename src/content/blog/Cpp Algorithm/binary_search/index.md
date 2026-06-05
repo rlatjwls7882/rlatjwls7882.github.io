@@ -153,7 +153,7 @@ cout << right-left;
 
 ## 연습 문제
 
-[이분 탐색](https://soj.services/problems/23)
+[https://soj.services/problems/23](https://soj.services/problems/23)
 
 <details>
 <summary>코드 보기</summary>

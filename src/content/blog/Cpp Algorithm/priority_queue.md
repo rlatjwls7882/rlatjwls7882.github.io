@@ -98,7 +98,7 @@ if(pq.empty()) {
 
 ## 연습 문제
 
-[C++ Priority Queue](https://soj.services/problems/20)
+[https://soj.services/problems/20](https://soj.services/problems/20)
 
 <details>
 <summary>코드 보기</summary>

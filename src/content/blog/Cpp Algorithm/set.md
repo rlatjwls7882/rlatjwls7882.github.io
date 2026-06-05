@@ -171,7 +171,7 @@ if(s.count(20)) {
 
 ## 연습 문제
 
-[C++ Set](https://soj.services/problems/11)
+[https://soj.services/problems/11](https://soj.services/problems/11)
 
 <details>
 <summary>코드 보기</summary>

@@ -93,7 +93,7 @@ while(left<right) {
 
 ## 연습 문제
 
-[두 포인터](https://soj.services/problems/25)
+[https://soj.services/problems/25](https://soj.services/problems/25)
 
 <details>
 <summary>코드 보기</summary>
