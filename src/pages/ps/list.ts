@@ -54,6 +54,10 @@ export const list = [
         title: 'DFS (Depth First Search, 깊이 우선 탐색)',
         slug: 'dfs',
       },
+      {
+        title: 'BFS (Breadth First Search, 너비 우선 탐색)',
+        slug: 'bfs',
+      },
     ],
   },
   {

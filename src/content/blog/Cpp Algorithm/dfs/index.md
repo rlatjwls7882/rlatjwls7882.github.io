@@ -1,7 +1,7 @@
 ---
 title: "DFS (Depth First Search)"
 pubDate: 2026-06-05
-tags: ["그래프"]
+tags: ["그래프", "탐색"]
 ---
 
 DFS는 그래프에서 한 경로를 가능한 깊게 탐색하는 알고리즘이다.
