@@ -64,6 +64,10 @@ export const list = [
     title: '중급 알고리즘',
     items: [
       {
+        title: 'Sweeping (스위핑)',
+        slug: 'sweeping',
+      },
+      {
         title: 'DSU (Disjoint Set Union, 분리 집합)',
         slug: 'dsu',
       },
