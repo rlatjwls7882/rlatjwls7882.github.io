@@ -19,7 +19,7 @@ export const list = [
         slug: 'prefix_sum',
       },
       {
-        title: 'Two Pointer (두 포인터)',
+        title: 'Two Pointer',
         slug: 'two_pointer',
       },
       {
@@ -47,7 +47,7 @@ export const list = [
         slug: 'priority_queue',
       },
       {
-        title: 'Backtracking (백트래킹)',
+        title: 'Backtracking',
         slug: 'backtracking',
       },
       {
@@ -64,7 +64,7 @@ export const list = [
     title: '중급 알고리즘',
     items: [
       {
-        title: 'Sweeping (스위핑)',
+        title: 'Sweeping',
         slug: 'sweeping',
       },
       {
