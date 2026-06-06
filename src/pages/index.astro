@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 import { getPostCategory, getPostUrl } from '../utils/post';
 
 const posts = (await getCollection('blog'))
-  .filter((post) => !post.data.draft)
+  .filter((post) => !post.data.draft && !post.id.toLowerCase().startsWith('cpp algorithm/'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
