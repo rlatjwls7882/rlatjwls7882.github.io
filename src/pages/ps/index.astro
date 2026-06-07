@@ -13,7 +13,7 @@ const postByUrl = new Map(
 const groups = list.map((group) => ({
   ...group,
   items: group.items.map((item) => {
-    const url = `/blog/cpp-algorithm/${item.slug}`
+    const url = `/blog/cpp-algorithm/${group.path}/${item.slug}`
 
     return {
       ...item,

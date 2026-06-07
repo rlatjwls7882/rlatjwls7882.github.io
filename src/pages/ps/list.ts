@@ -1,6 +1,7 @@
 export const list = [
   {
     title: '기초 알고리즘',
+    path: '1',
     items: [
       {
         title: 'Vector',
@@ -62,6 +63,7 @@ export const list = [
   },
   {
     title: '중급 알고리즘',
+    path: '2',
     items: [
       {
         title: 'Sweeping',
@@ -75,7 +77,12 @@ export const list = [
   },
   {
     title: '고급 알고리즘',
+    path: '3',
     items: [
+      {
+        title: 'Imos Method',
+        slug: 'imos',
+      },
       {
         title: 'PBDS (Ordered Set)',
         slug: 'pbds',

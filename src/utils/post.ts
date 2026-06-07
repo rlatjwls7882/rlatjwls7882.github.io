@@ -11,13 +11,9 @@ export function getPostUrl(id: string) {
 
 export function getPostCategory(id: string) {
   const slug = getPostSlug(id);
-  const parts = slug.split('/');
+  const [category] = slug.split('/');
 
-  if (parts.length <= 1) {
-    return 'general';
-  }
-
-  return parts.slice(0, -1).join('/');
+  return category ?? 'general';
 }
 
 export function getCategoryUrl(category: string) {
