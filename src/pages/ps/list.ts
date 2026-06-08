@@ -48,6 +48,10 @@ export const list = [
         slug: 'priority_queue',
       },
       {
+        title: 'Primality Test (소수 판정)',
+        slug: 'primality_test',
+      },
+      {
         title: 'Backtracking',
         slug: 'backtracking',
       },
