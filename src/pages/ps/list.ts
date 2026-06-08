@@ -52,6 +52,10 @@ export const list = [
         slug: 'primality_test',
       },
       {
+        title: 'Sieve of Eratosthenes (에라토스테네스의 체)',
+        slug: 'sieve_of_eratosthenes',
+      },
+      {
         title: 'Backtracking',
         slug: 'backtracking',
       },
