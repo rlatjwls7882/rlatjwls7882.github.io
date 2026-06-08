@@ -56,6 +56,10 @@ export const list = [
         slug: 'sieve_of_eratosthenes',
       },
       {
+        title: 'Euclidean Algorithm (유클리드 호제법)',
+        slug: 'euclidean',
+      },
+      {
         title: 'Backtracking',
         slug: 'backtracking',
       },
