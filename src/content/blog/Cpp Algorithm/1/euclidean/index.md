@@ -98,27 +98,10 @@ cout << lcm(a, b);
 #include<bits/stdc++.h>
 using namespace std;
 
-typedef long long ll;
-
 int main() {
     cin.tie(0)->sync_with_stdio(0);
-
-    int t; cin >> t;
-    while(t--) {
-        int n; cin >> n;
-        vector<ll> a(n);
-
-        for(ll &x:a) cin >> x;
-
-        ll sum=0;
-        for(int i=0;i<n;i++) {
-            for(int j=i+1;j<n;j++) {
-                sum+=gcd(a[i], a[j]);
-            }
-        }
-
-        cout << sum << '\n';
-    }
+    long long a, b; cin >> a >> b;
+    cout << gcd(a, b) << '\n' << a*b/gcd(a, b);
 }
 ```
 
