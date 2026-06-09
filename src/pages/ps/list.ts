@@ -94,6 +94,10 @@ export const list = [
         slug: 'dijkstra',
       },
       {
+        title: 'Bellman-Ford Algorithm (벨만-포드)',
+        slug: 'bellman-ford',
+      },
+      {
         title: 'Modular Multiplicative Inverse (모듈러 곱셈의 역원)',
         slug: 'modular_multiplicative_inverse',
       },
