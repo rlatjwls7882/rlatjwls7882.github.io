@@ -60,6 +60,10 @@ export const list = [
         slug: 'euclidean',
       },
       {
+        title: 'Exponentiation by Squaring (빠른 거듭제곱)',
+        slug: 'exponentiation_by_squaring',
+      },
+      {
         title: 'Backtracking',
         slug: 'backtracking',
       },
