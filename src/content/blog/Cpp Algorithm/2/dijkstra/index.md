@@ -147,20 +147,15 @@ vector<vector<element>> conn(100'001);
 
 void dijkstra(int start, int n) {
     fill(dist, dist+n+1, LINF);
-
     priority_queue<element> pq;
     pq.push({start, 0});
 
     while(!pq.empty()) {
-        auto [cur, cost]=pq.top();
-        pq.pop();
-
+        auto [cur, cost]=pq.top(); pq.pop();
         if(dist[cur]<=cost) continue;
         dist[cur]=cost;
-
         for(auto [next, weight]:conn[cur]) {
             ll nextCost=dist[cur]+weight;
-
             if(nextCost<dist[next]) {
                 pq.push({next, nextCost});
             }
