@@ -1,5 +1,5 @@
 ---
-title: "Dijkstra's Algorithm (다익스트라)"
+title: "Dijkstra's Algorithm"
 pubDate: 2026-06-09
 tags: ["그래프", "최단 경로"]
 ---

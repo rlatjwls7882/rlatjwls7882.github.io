@@ -4,11 +4,11 @@ export const list = [
     path: '1',
     items: [
       {
-        title: 'Vector',
+        title: 'Vector (벡터)',
         slug: 'vector',
       },
       {
-        title: 'Sort',
+        title: 'Sort (정렬)',
         slug: 'sort',
       },
       {
@@ -20,27 +20,27 @@ export const list = [
         slug: 'prefix_sum',
       },
       {
-        title: 'Two Pointer',
+        title: 'Two Pointer (두 포인터)',
         slug: 'two_pointer',
       },
       {
-        title: 'Stack',
+        title: 'Stack (스택)',
         slug: 'stack',
       },
       {
-        title: 'Queue',
+        title: 'Queue (큐)',
         slug: 'queue',
       },
       {
-        title: 'Deque',
+        title: 'Deque (덱)',
         slug: 'deque',
       },
       {
-        title: 'Set',
+        title: 'Set (셋)',
         slug: 'set',
       },
       {
-        title: 'Map',
+        title: 'Map (맵)',
         slug: 'map',
       },
       {
@@ -64,7 +64,7 @@ export const list = [
         slug: 'exponentiation_by_squaring',
       },
       {
-        title: 'Backtracking',
+        title: 'Backtracking (백트래킹)',
         slug: 'backtracking',
       },
       {
@@ -82,7 +82,7 @@ export const list = [
     path: '2',
     items: [
       {
-        title: 'Sweeping',
+        title: 'Sweeping (스위핑)',
         slug: 'sweeping',
       },
       {
@@ -104,7 +104,7 @@ export const list = [
     path: '3',
     items: [
       {
-        title: 'Imos Method',
+        title: 'Imos Method (이모스법)',
         slug: 'imos',
       },
       {
