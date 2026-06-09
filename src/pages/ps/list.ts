@@ -89,6 +89,10 @@ export const list = [
         title: 'DSU (Disjoint Set Union, 분리 집합)',
         slug: 'dsu',
       },
+      {
+        title: 'Modular Multiplicative Inverse (모듈러 곱셈의 역원)',
+        slug: 'modular_multiplicative_inverse',
+      },
     ],
   },
   {
