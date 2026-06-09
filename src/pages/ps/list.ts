@@ -90,6 +90,10 @@ export const list = [
         slug: 'dsu',
       },
       {
+        title: "Dijkstra's Algorithm (다익스트라)",
+        slug: 'dijkstra',
+      },
+      {
         title: 'Modular Multiplicative Inverse (모듈러 곱셈의 역원)',
         slug: 'modular_multiplicative_inverse',
       },
