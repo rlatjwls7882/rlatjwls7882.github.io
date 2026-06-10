@@ -110,6 +110,10 @@ export const list = [
         slug: 'kahn',
       },
       {
+        title: "Kruskal's Algorithm",
+        slug: 'kruskal',
+      },
+      {
         title: 'Modular Multiplicative Inverse (모듈러 곱셈의 역원)',
         slug: 'modular_multiplicative_inverse',
       },
