@@ -1,5 +1,5 @@
 ---
-title: "Imos Method"
+title: "Imos Method (いもす法, Difference Array Trick)"
 pubDate: 2026-06-07
 tags: ["구간 처리"]
 ---

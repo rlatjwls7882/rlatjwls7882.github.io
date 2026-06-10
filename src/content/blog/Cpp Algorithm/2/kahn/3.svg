@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<style>
+text { font-family: "Noto Sans CJK KR", "Malgun Gothic", Arial, sans-serif; fill: #202020; }
+.title { font-size: 22px; font-weight: 700; }
+.label { font-size: 17px; }
+.small { font-size: 14px; fill: #5b5b5b; }
+.node { fill: white; stroke: #5e5e5e; stroke-width: 1.5; }
+.current { fill: #d9d9d9; stroke: #202020; stroke-width: 2.1; }
+.known { fill: #ededed; stroke: #303030; stroke-width: 1.6; }
+.edge { fill: none; stroke: #777; stroke-width: 1.7; marker-end: url(#arrow); }
+.focus { fill: none; stroke: #202020; stroke-width: 2.5; marker-end: url(#arrowBold); }
+.mutedEdge { fill: none; stroke: #c7c7c7; stroke-width: 1.3; stroke-dasharray: 6 5; marker-end: url(#arrowMuted); }
+.panel { fill: #fcfcfc; stroke: #c7c7c7; stroke-width: 1.2; rx: 10; }
+.cell { fill: white; stroke: #777; stroke-width: 1; }
+.changed { fill: #e7e7e7; stroke: #202020; stroke-width: 2; }
+.queuecell { fill: white; stroke: #777; stroke-width: 1.2; rx: 4; }
+.queuefocus { fill: #e7e7e7; stroke: #202020; stroke-width: 2; rx: 4; }
+</style>
+
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#777"/>
+  </marker>
+  <marker id="arrowBold" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#202020"/>
+  </marker>
+  <marker id="arrowMuted" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#c7c7c7"/>
+  </marker>
+</defs><rect x="0" y="0" width="1120" height="620" fill="white"/>
+<text x="560.0" y="42" text-anchor="middle" class="title">1번 정점을 꺼내고 연결된 간선을 제거하기</text><line x1="184.3" y1="211.0" x2="335.7" y2="124.0" class="mutedEdge"/><line x1="184.5" y1="238.5" x2="335.5" y2="321.5" class="mutedEdge"/><line x1="386.3" y1="119.7" x2="563.7" y2="185.3" class="edge"/><line x1="383.9" y1="320.4" x2="566.1" y2="209.6" class="edge"/><line x1="387.2" y1="341.5" x2="562.8" y2="383.5" class="edge"/><line x1="590.0" y1="223.0" x2="590.0" y2="362.0" class="edge"/><circle cx="160" cy="225" r="25" class="current"/><text x="160" y="231" text-anchor="middle" class="label">1</text><circle cx="360" cy="110" r="25" class="node"/><text x="360" y="116" text-anchor="middle" class="label">2</text><circle cx="360" cy="335" r="25" class="node"/><text x="360" y="341" text-anchor="middle" class="label">3</text><circle cx="590" cy="195" r="25" class="node"/><text x="590" y="201" text-anchor="middle" class="label">4</text><circle cx="590" cy="390" r="25" class="node"/><text x="590" y="396" text-anchor="middle" class="label">5</text><text x="735" y="107" class="label" font-weight="700">indegree</text><text x="761" y="139" text-anchor="middle" class="small">1</text><rect x="735" y="155" width="52" height="42" class="cell"/><text x="761" y="182" text-anchor="middle" class="label">0</text><text x="823" y="139" text-anchor="middle" class="small">2</text><rect x="797" y="155" width="52" height="42" class="changed"/><text x="823" y="182" text-anchor="middle" class="label">0</text><text x="885" y="139" text-anchor="middle" class="small">3</text><rect x="859" y="155" width="52" height="42" class="changed"/><text x="885" y="182" text-anchor="middle" class="label">0</text><text x="947" y="139" text-anchor="middle" class="small">4</text><rect x="921" y="155" width="52" height="42" class="cell"/><text x="947" y="182" text-anchor="middle" class="label">2</text><text x="1009" y="139" text-anchor="middle" class="small">5</text><rect x="983" y="155" width="52" height="42" class="cell"/><text x="1009" y="182" text-anchor="middle" class="label">2</text><text x="735" y="249" class="label" font-weight="700">queue</text><rect x="735" y="275" width="62" height="42" class="queuefocus"/><text x="766" y="302" text-anchor="middle" class="label">2</text><rect x="811" y="275" width="62" height="42" class="queuecell"/><text x="842" y="302" text-anchor="middle" class="label">3</text><rect x="713" y="357" width="355" height="163" class="panel"/><text x="735" y="395" class="label">1 → 2, 1 → 3 간선을 제거한다고 생각한다.</text><text x="735" y="429" class="label">2번과 3번 정점의 진입 차수가 0이 된다.</text><text x="735" y="463" class="label">두 정점을 큐에 넣는다.</text></svg>

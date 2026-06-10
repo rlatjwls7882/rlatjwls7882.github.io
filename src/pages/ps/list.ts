@@ -106,6 +106,10 @@ export const list = [
         slug: 'spfa',
       },
       {
+        title: "Kahn's Algorithm",
+        slug: 'kahn',
+      },
+      {
         title: 'Modular Multiplicative Inverse (모듈러 곱셈의 역원)',
         slug: 'modular_multiplicative_inverse',
       },
@@ -116,7 +120,7 @@ export const list = [
     path: '3',
     items: [
       {
-        title: 'Imos Method (이모스법)',
+        title: 'Imos Method (いもす法, Difference Array Trick)',
         slug: 'imos',
       },
       {
