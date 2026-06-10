@@ -98,6 +98,10 @@ export const list = [
         slug: 'bellman-ford',
       },
       {
+        title: 'Floyd-Warshall Algorithm (플로이드-워셜)',
+        slug: 'floyd-warshall',
+      },
+      {
         title: 'Modular Multiplicative Inverse (모듈러 곱셈의 역원)',
         slug: 'modular_multiplicative_inverse',
       },
