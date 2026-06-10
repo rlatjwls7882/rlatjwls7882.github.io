@@ -4,7 +4,7 @@ export const list = [
     path: '1',
     items: [
       {
-        title: 'Vector (벡터)',
+        title: 'Vector',
         slug: 'vector',
       },
       {
@@ -20,27 +20,27 @@ export const list = [
         slug: 'prefix_sum',
       },
       {
-        title: 'Two Pointer (두 포인터)',
+        title: 'Two Pointer',
         slug: 'two_pointer',
       },
       {
-        title: 'Stack (스택)',
+        title: 'Stack',
         slug: 'stack',
       },
       {
-        title: 'Queue (큐)',
+        title: 'Queue',
         slug: 'queue',
       },
       {
-        title: 'Deque (덱)',
+        title: 'Deque',
         slug: 'deque',
       },
       {
-        title: 'Set (셋)',
+        title: 'Set',
         slug: 'set',
       },
       {
-        title: 'Map (맵)',
+        title: 'Map',
         slug: 'map',
       },
       {
@@ -64,7 +64,7 @@ export const list = [
         slug: 'exponentiation_by_squaring',
       },
       {
-        title: 'Backtracking (백트래킹)',
+        title: 'Backtracking',
         slug: 'backtracking',
       },
       {
@@ -82,7 +82,7 @@ export const list = [
     path: '2',
     items: [
       {
-        title: 'Sweeping (스위핑)',
+        title: 'Sweeping',
         slug: 'sweeping',
       },
       {
@@ -90,16 +90,20 @@ export const list = [
         slug: 'dsu',
       },
       {
-        title: "Dijkstra's Algorithm (다익스트라)",
+        title: "Dijkstra's Algorithm",
         slug: 'dijkstra',
       },
       {
-        title: 'Bellman-Ford Algorithm (벨만-포드)',
+        title: 'Bellman-Ford Algorithm',
         slug: 'bellman-ford',
       },
       {
-        title: 'Floyd-Warshall Algorithm (플로이드-워셜)',
+        title: 'Floyd-Warshall Algorithm',
         slug: 'floyd-warshall',
+      },
+      {
+        title: 'SPFA (Shortest Path Faster Algorithm)',
+        slug: 'spfa',
       },
       {
         title: 'Modular Multiplicative Inverse (모듈러 곱셈의 역원)',
