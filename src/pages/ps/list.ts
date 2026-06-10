@@ -131,6 +131,10 @@ export const list = [
         title: 'PBDS (Ordered Set)',
         slug: 'pbds',
       },
+      {
+        title: "Kuhn's Algorithm",
+        slug: 'kuhn',
+      },
     ],
   },
 ] as const
