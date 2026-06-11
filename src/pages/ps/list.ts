@@ -139,6 +139,10 @@ export const list = [
         title: 'Edmonds-Karp Algorithm',
         slug: 'edmonds-karp',
       },
+      {
+        title: 'MCMF (Min-Cost Max-Flow)',
+        slug: 'mcmf',
+      },
     ],
   },
 ] as const
