@@ -143,6 +143,10 @@ export const list = [
         title: 'MCMF (Min-Cost Max-Flow)',
         slug: 'mcmf',
       },
+      {
+        title: "Dinic's Algorithm",
+        slug: 'dinic',
+      },
     ],
   },
 ] as const
