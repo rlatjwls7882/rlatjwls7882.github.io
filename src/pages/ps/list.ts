@@ -135,6 +135,10 @@ export const list = [
         title: "Kuhn's Algorithm",
         slug: 'kuhn',
       },
+      {
+        title: 'Edmonds-Karp Algorithm',
+        slug: 'edmonds-karp',
+      },
     ],
   },
 ] as const
