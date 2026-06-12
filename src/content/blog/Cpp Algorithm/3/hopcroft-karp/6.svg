@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="760" viewBox="0 0 980 760">
+<rect width="100%" height="100%" fill="white"/>
+<style>
+text { font-family: "Noto Sans CJK KR", "Malgun Gothic", Arial, sans-serif; fill: #202020; }
+.title { font-size: 23px; font-weight: 700; }
+.label { font-size: 17px; }
+.small { font-size: 14px; fill: #5a5a5a; }
+.node { fill: white; stroke: #555; stroke-width: 1.7; }
+.edge { stroke: #b6b6b6; stroke-width: 1.5; }
+.match { stroke: #202020; stroke-width: 4.0; }
+.path { stroke: #202020; stroke-width: 3.0; stroke-dasharray: 9 6; }
+.cell { fill: white; stroke: #777; stroke-width: 1; }
+.cellHi { fill: #e7e7e7; stroke: #202020; stroke-width: 2; }
+</style>
+<text x="490.0" y="42" text-anchor="middle" class="title">완성된 최대 매칭</text><text x="190" y="82" text-anchor="middle" class="label" font-weight="700">A</text><text x="700" y="82" text-anchor="middle" class="label" font-weight="700">B</text><line x1="217" y1="130" x2="673" y2="130" class="edge"/><line x1="217" y1="130" x2="673" y2="255" class="match"/><line x1="217" y1="255" x2="673" y2="130" class="match"/><line x1="217" y1="255" x2="673" y2="380" class="edge"/><line x1="217" y1="380" x2="673" y2="255" class="edge"/><line x1="217" y1="380" x2="673" y2="505" class="match"/><line x1="217" y1="505" x2="673" y2="380" class="match"/><circle cx="190" cy="130" r="26" class="node"/><text x="190" y="136" text-anchor="middle" class="label">A1</text><circle cx="190" cy="255" r="26" class="node"/><text x="190" y="261" text-anchor="middle" class="label">A2</text><circle cx="190" cy="380" r="26" class="node"/><text x="190" y="386" text-anchor="middle" class="label">A3</text><circle cx="190" cy="505" r="26" class="node"/><text x="190" y="511" text-anchor="middle" class="label">A4</text><circle cx="700" cy="130" r="26" class="node"/><text x="700" y="136" text-anchor="middle" class="label">B1</text><circle cx="700" cy="255" r="26" class="node"/><text x="700" y="261" text-anchor="middle" class="label">B2</text><circle cx="700" cy="380" r="26" class="node"/><text x="700" y="386" text-anchor="middle" class="label">B3</text><circle cx="700" cy="505" r="26" class="node"/><text x="700" y="511" text-anchor="middle" class="label">B4</text><text x="490.0" y="585" text-anchor="middle" class="label">최대 매칭의 크기는 4이다.</text></svg>

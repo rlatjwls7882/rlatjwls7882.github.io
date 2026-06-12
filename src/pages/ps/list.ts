@@ -147,6 +147,10 @@ export const list = [
         title: "Dinic's Algorithm",
         slug: 'dinic',
       },
+      {
+        title: 'Hopcroft-Karp Algorithm',
+        slug: 'hopcroft-karp',
+      },
     ],
   },
 ] as const
