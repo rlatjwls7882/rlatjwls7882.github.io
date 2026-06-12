@@ -115,8 +115,6 @@ A4 - B3
 다음 코드는 Hopcroft-Karp의 핵심 구조를 간결하게 구현한 형태이다.
 
 ```cpp
-const int MAX = 100'001;
-
 int n, m, k, a[MAX], b[MAX], level[MAX];
 vector<vector<int>> conn(MAX);
 

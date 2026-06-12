@@ -124,11 +124,8 @@ S → 1 → 2 → 3 → 4 → E
 에드몬드-카프는 다음과 같이 구현할 수 있다. $O(VE^2)$
 
 ```cpp
-typedef long long ll;
-const ll INF = 03f3f3f3f3f3f3f3f;
-
-ll capacity[501][501], flow[501][501], prv[501];
-vector<vector<int>> conn(501);
+ll capacity[MAX][MAX], flow[MAX][MAX], prv[MAX];
+vector<vector<int>> conn(MAX);
 
 void addEdge(int u, int v, ll c) {
     capacity[u][v]+=c;

@@ -99,10 +99,6 @@ memset(work, 0, sizeof work);
 Dinic은 다음과 같이 구현할 수 있다. $O(V^2E)$
 
 ```cpp
-typedef long long ll;
-const ll LINF = 0x3f3f3f3f3f3f3f3f;
-const int MAX = 2001;
-
 int source, sink, n;
 ll f[MAX][MAX], c[MAX][MAX];
 int level[MAX], work[MAX];

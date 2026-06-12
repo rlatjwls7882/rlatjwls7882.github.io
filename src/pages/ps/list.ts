@@ -132,6 +132,10 @@ export const list = [
         slug: 'pbds',
       },
       {
+        title: "Tarjan's Algorithm",
+        slug: 'tarjan',
+      },
+      {
         title: "Kuhn's Algorithm",
         slug: 'kuhn',
       },

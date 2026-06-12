@@ -141,12 +141,9 @@ c[v][u] - f[v][u]
 MCMF는 다음과 같이 구현할 수 있다. $O(FVE)$
 
 ```cpp
-typedef long long ll;
-const ll LINF=0x3f3f3f3f3f3f3f3f;
-
-bool inQ[101];
-ll f[101][101], c[101][101], w[101][101], cost[101], prv[101];
-vector<vector<int>> conn(101);
+bool inQ[MAX];
+ll f[MAX][MAX], c[MAX][MAX], w[MAX][MAX], cost[MAX], prv[MAX];
+vector<vector<int>> conn(MAX);
 
 pair<ll, ll> mcmf(int source, int sink, int n) {
     ll totalFlow=0, totalCost=0;

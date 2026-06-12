@@ -85,8 +85,8 @@ Kuhn 알고리즘은 DFS를 이용해 이러한 재배치가 가능한지 확인
 Kuhn 알고리즘은 다음과 같이 구현할 수 있다. $O(VE)$
 
 ```cpp
-int A[1001], B[1001], visited[1001];
-vector<vector<int>> conn(1001);
+int A[MAX], B[MAX], visited[MAX];
+vector<vector<int>> conn(MAX);
 
 bool dfs(int cur) {
     visited[cur]=true;
