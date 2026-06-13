@@ -117,6 +117,10 @@ export const list = [
         title: 'Modular Multiplicative Inverse (모듈러 곱셈의 역원)',
         slug: 'modular_multiplicative_inverse',
       },
+      {
+        title: 'KMP (Knuth-Morris-Pratt)',
+        slug: 'kmp',
+      },
     ],
   },
   {

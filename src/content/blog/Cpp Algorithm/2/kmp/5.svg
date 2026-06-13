@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="688" height="250" viewBox="0 0 688 250"><rect width="100%" height="100%" fill="white"/>
+<style>
+text {
+  font-family: "JetBrains Mono", "Consolas", "Noto Sans Mono CJK KR", monospace;
+  fill: #202020;
+}
+.label { font-size: 19px; }
+.small { font-size: 15px; fill: #555; }
+.cell { fill: white; stroke: #777; stroke-width: 1.2; }
+.match { fill: #eeeeee; stroke: #555; stroke-width: 1.4; }
+.current { fill: #dddddd; stroke: #202020; stroke-width: 2.1; }
+.mismatch { fill: white; stroke: #202020; stroke-width: 2.1; }
+.arrow { fill: none; stroke: #202020; stroke-width: 1.6; marker-end: url(#arrow); }
+</style>
+
+<defs>
+  <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L8,3 z" fill="#202020"/>
+  </marker>
+</defs>
+<text x="90" y="45" text-anchor="end" class="label">index</text><rect x="108" y="16" width="58" height="44" class="cell"/><text x="137.0" y="45" text-anchor="middle" class="label">0</text><rect x="166" y="16" width="58" height="44" class="cell"/><text x="195.0" y="45" text-anchor="middle" class="label">1</text><rect x="224" y="16" width="58" height="44" class="cell"/><text x="253.0" y="45" text-anchor="middle" class="label">2</text><rect x="282" y="16" width="58" height="44" class="cell"/><text x="311.0" y="45" text-anchor="middle" class="label">3</text><rect x="340" y="16" width="58" height="44" class="cell"/><text x="369.0" y="45" text-anchor="middle" class="label">4</text><rect x="398" y="16" width="58" height="44" class="cell"/><text x="427.0" y="45" text-anchor="middle" class="label">5</text><rect x="456" y="16" width="58" height="44" class="cell"/><text x="485.0" y="45" text-anchor="middle" class="label">6</text><rect x="514" y="16" width="58" height="44" class="cell"/><text x="543.0" y="45" text-anchor="middle" class="label">7</text><text x="90" y="99" text-anchor="end" class="label">text</text><rect x="108" y="70" width="58" height="44" class="cell"/><text x="137.0" y="99" text-anchor="middle" class="label">A</text><rect x="166" y="70" width="58" height="44" class="cell"/><text x="195.0" y="99" text-anchor="middle" class="label">B</text><rect x="224" y="70" width="58" height="44" class="cell"/><text x="253.0" y="99" text-anchor="middle" class="label">C</text><rect x="282" y="70" width="58" height="44" class="match"/><text x="311.0" y="99" text-anchor="middle" class="label">A</text><rect x="340" y="70" width="58" height="44" class="match"/><text x="369.0" y="99" text-anchor="middle" class="label">B</text><rect x="398" y="70" width="58" height="44" class="match"/><text x="427.0" y="99" text-anchor="middle" class="label">C</text><rect x="456" y="70" width="58" height="44" class="match"/><text x="485.0" y="99" text-anchor="middle" class="label">A</text><rect x="514" y="70" width="58" height="44" class="match"/><text x="543.0" y="99" text-anchor="middle" class="label">C</text><text x="90" y="153" text-anchor="end" class="label">pattern</text><rect x="282" y="124" width="58" height="44" class="match"/><text x="311.0" y="153" text-anchor="middle" class="label">A</text><rect x="340" y="124" width="58" height="44" class="match"/><text x="369.0" y="153" text-anchor="middle" class="label">B</text><rect x="398" y="124" width="58" height="44" class="match"/><text x="427.0" y="153" text-anchor="middle" class="label">C</text><rect x="456" y="124" width="58" height="44" class="match"/><text x="485.0" y="153" text-anchor="middle" class="label">A</text><rect x="514" y="124" width="58" height="44" class="current"/><text x="543.0" y="153" text-anchor="middle" class="label">C</text><text x="514" y="208" text-anchor="middle" class="small">start = 3</text></svg>
