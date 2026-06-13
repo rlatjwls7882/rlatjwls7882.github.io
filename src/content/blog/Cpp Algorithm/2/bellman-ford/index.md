@@ -122,15 +122,8 @@ if(dist[j]==LINF) continue;
 벨만-포드는 다음과 같이 구현할 수 있다. $O(VE)$
 
 ```cpp
-typedef long long ll;
-const ll LINF=0x3f3f3f3f3f3f3f3f;
-
-struct edge {
-    ll v, w;
-};
-
-ll dist[1001];
-vector<vector<edge>> conn(1001);
+ll dist[MAX];
+vector<vector<pair<ll, ll>>> conn(MAX);
 
 bool bellmanFord(int start, int n) {
     fill(dist, dist+n+1, LINF);
@@ -190,15 +183,10 @@ conn[u].push_back({v, w});
 using namespace std;
 
 typedef long long ll;
-
 const ll LINF=0x3f3f3f3f3f3f3f3f;
 
-struct edge {
-    ll v, w;
-};
-
 ll dist[1001];
-vector<vector<edge>> conn(1001);
+vector<vector<pair<ll, ll>>> conn(1001);
 
 int main() {
     cin.tie(0)->sync_with_stdio(0);

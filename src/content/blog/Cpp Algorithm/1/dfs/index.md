@@ -80,8 +80,8 @@ visited[cur]=++cnt;
 DFS는 재귀 함수를 이용해 다음과 같이 구현할 수 있다. $O(V+E)$
 
 ```cpp
-int cnt, visited[200'001];
-vector<vector<int>> conn(200'001);
+int cnt, visited[MAX];
+vector<vector<int>> conn(MAX);
 
 void dfs(int cur) {
     visited[cur]=++cnt;

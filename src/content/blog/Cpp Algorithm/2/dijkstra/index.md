@@ -131,10 +131,6 @@ conn[v].push_back({u, w});
 다익스트라는 우선순위 큐를 이용해 다음과 같이 구현할 수 있다.
 
 ```cpp
-typedef long long ll;
-
-const ll LINF=0x3f3f3f3f3f3f3f3f;
-
 struct element {
     ll u, w;
     bool operator<(const element& e) const {
@@ -142,8 +138,8 @@ struct element {
     }
 };
 
-ll dist[100'001];
-vector<vector<element>> conn(100'001);
+ll dist[MAX];
+vector<vector<element>> conn(MAX);
 
 void dijkstra(int start, int n) {
     fill(dist, dist+n+1, LINF);

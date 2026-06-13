@@ -73,7 +73,7 @@ struct edge {
     }
 };
 
-int parent[100'001];
+int parent[MAX];
 
 int find(int x) {
     if(parent[x]==x) return x;

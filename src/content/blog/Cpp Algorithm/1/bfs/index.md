@@ -77,8 +77,8 @@ q.push(next);
 BFS는 `queue`를 이용해 다음과 같이 구현할 수 있다. $O(V+E)$
 
 ```cpp
-int cnt, visited[200'001];
-vector<vector<int>> conn(200'001);
+int cnt, visited[MAX];
+vector<vector<int>> conn(MAX);
 
 void bfs(int start) {
     queue<int> q; q.push(start);

@@ -66,10 +66,10 @@ visited[x]=false;
 `1`부터 `n`까지의 정수 중 서로 다른 `m`개를 고르는 순열은 다음과 같이 구할 수 있다.
 
 ```cpp
-int n, m, arr[8];
-bool visited[9];
+int n, m, arr[MAX];
+bool visited[MAX];
 
-void back(int depth=0) {
+void back(int depth) {
     if(depth==m) {
         for(int i=0;i<m;i++) cout << arr[i] << ' ';
         cout << '\n';

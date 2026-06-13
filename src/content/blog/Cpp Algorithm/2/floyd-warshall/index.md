@@ -63,9 +63,7 @@ minCost[start][end]=min(minCost[start][end], minCost[start][mid]+minCost[mid][en
 플로이드-워셜은 다음과 같이 구현할 수 있다. $O(V^3)$
 
 ```cpp
-const int INF=0x3f3f3f3f;
-
-int minCost[101][101];
+int minCost[MAX][MAX];
 
 void floydWarshall(int n) {
     for(int mid=1;mid<=n;mid++) {

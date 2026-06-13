@@ -113,13 +113,10 @@ if(!inQueue[nxt]) {
 SPFA는 다음과 같이 구현할 수 있다.
 
 ```cpp
-typedef long long ll;
-const ll LINF=0x3f3f3f3f3f3f3f3f;
-
-ll dist[1001];
-int cnt[1001];
-bool inQueue[1001];
-vector<vector<pair<int, ll>>> conn(1001);
+ll dist[MAX];
+int cnt[MAX];
+bool inQueue[MAX];
+vector<vector<pair<int, ll>>> conn(MAX);
 
 bool spfa(int start, int n) {
     fill(dist, dist+n+1, LINF);
