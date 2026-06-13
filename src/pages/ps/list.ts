@@ -106,6 +106,10 @@ export const list = [
         slug: 'spfa',
       },
       {
+        title: 'TSP (Traveling Salesman Problem) ',
+        slug: 'tsp',
+      },
+      {
         title: "Kahn's Algorithm",
         slug: 'kahn',
       },
@@ -122,7 +126,7 @@ export const list = [
         slug: 'kmp',
       },
       {
-        title: ' Rabin-Karp Algorithm',
+        title: 'Rabin-Karp Algorithm',
         slug: 'rabin-karp',
       },
     ],

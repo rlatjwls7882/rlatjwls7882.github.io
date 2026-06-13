@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="330" viewBox="0 0 840 330"><rect width="100%" height="100%" fill="white"/>
+<style>
+text {
+  font-family: "JetBrains Mono", "Consolas", "Noto Sans Mono CJK KR", monospace;
+  fill: #202020;
+}
+.label { font-size: 18px; }
+.small { font-size: 14px; fill: #555; }
+.node { fill: white; stroke: #555; stroke-width: 1.8; }
+.nodeCurrent { fill: #dddddd; stroke: #202020; stroke-width: 2.2; }
+.edge { fill: none; stroke: #999; stroke-width: 1.7; marker-end: url(#arrowGray); }
+.selected { fill: none; stroke: #202020; stroke-width: 3.8; marker-end: url(#arrow); }
+.cell { fill: white; stroke: #777; stroke-width: 1.2; }
+.cellHi { fill: #eeeeee; stroke: #202020; stroke-width: 1.8; }
+.pathBox { fill: white; stroke: #777; stroke-width: 1.2; rx: 5; }
+.pathBoxHi { fill: #eeeeee; stroke: #202020; stroke-width: 1.8; rx: 5; }
+</style>
+
+<defs>
+  <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L8,3 z" fill="#202020"/>
+  </marker>
+  <marker id="arrowGray" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L8,3 z" fill="#999"/>
+  </marker>
+</defs>
+<rect x="204" y="58" width="116" height="52" class="cell"/><text x="262.0" y="86" text-anchor="middle" class="small">2</text><rect x="320" y="58" width="116" height="52" class="cell"/><text x="378.0" y="86" text-anchor="middle" class="small">1</text><rect x="436" y="58" width="116" height="52" class="cell"/><text x="494.0" y="86" text-anchor="middle" class="small">0</text><rect x="88" y="110" width="116" height="52" class="cell"/><text x="146.0" y="138" text-anchor="middle" class="small">visit</text><rect x="204" y="110" width="116" height="52" class="cell"/><text x="262.0" y="138" text-anchor="middle" class="label">0</text><rect x="320" y="110" width="116" height="52" class="cell"/><text x="378.0" y="138" text-anchor="middle" class="label">0</text><rect x="436" y="110" width="116" height="52" class="cellHi"/><text x="494.0" y="138" text-anchor="middle" class="label">1</text><rect x="88" y="162" width="116" height="52" class="cell"/><text x="146.0" y="190" text-anchor="middle" class="small">1 &lt;&lt; next</text><rect x="204" y="162" width="116" height="52" class="cell"/><text x="262.0" y="190" text-anchor="middle" class="label">0</text><rect x="320" y="162" width="116" height="52" class="cellHi"/><text x="378.0" y="190" text-anchor="middle" class="label">1</text><rect x="436" y="162" width="116" height="52" class="cell"/><text x="494.0" y="190" text-anchor="middle" class="label">0</text><rect x="88" y="214" width="116" height="52" class="cell"/><text x="146.0" y="242" text-anchor="middle" class="small">visit | (1 &lt;&lt; next)</text><rect x="204" y="214" width="116" height="52" class="cell"/><text x="262.0" y="242" text-anchor="middle" class="label">0</text><rect x="320" y="214" width="116" height="52" class="cellHi"/><text x="378.0" y="242" text-anchor="middle" class="label">1</text><rect x="436" y="214" width="116" height="52" class="cellHi"/><text x="494.0" y="242" text-anchor="middle" class="label">1</text><text x="618" y="108" class="label">cur = 0</text><text x="618" y="165" class="label">next = 1</text><text x="618" y="222" class="label">001 → 011</text></svg>
