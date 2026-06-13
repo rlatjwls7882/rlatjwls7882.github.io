@@ -129,6 +129,10 @@ export const list = [
         title: 'Rabin-Karp Algorithm',
         slug: 'rabin-karp',
       },
+      {
+        title: 'Trie',
+        slug: 'trie',
+      },
     ],
   },
   {
