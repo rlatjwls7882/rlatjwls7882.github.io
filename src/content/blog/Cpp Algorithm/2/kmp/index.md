@@ -1,5 +1,5 @@
 ---
-title: "KMP (Knuth-Morris-Pratt)"
+title: "KMP (Knuth-Morris-Pratt) Algorithm"
 pubDate: 2026-06-13
 tags: ["문자열"]
 ---

@@ -118,8 +118,12 @@ export const list = [
         slug: 'modular_multiplicative_inverse',
       },
       {
-        title: 'KMP (Knuth-Morris-Pratt)',
+        title: 'KMP (Knuth-Morris-Pratt) Algorithm',
         slug: 'kmp',
+      },
+      {
+        title: ' Rabin-Karp Algorithm',
+        slug: 'rabin-karp',
       },
     ],
   },
