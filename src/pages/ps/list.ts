@@ -136,6 +136,10 @@ export const list = [
         slug: 'tarjan',
       },
       {
+        title: '2-SAT (2-Satisfiability)',
+        slug: '2-sat',
+      },
+      {
         title: "Kuhn's Algorithm",
         slug: 'kuhn',
       },

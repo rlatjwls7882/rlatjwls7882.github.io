@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="270" viewBox="0 0 760 270"><rect width="100%" height="100%" fill="white"/>
+<style>
+text { font-family: "Noto Sans CJK KR", "Malgun Gothic", Arial, sans-serif; fill: #202020; }
+.label { font-size: 18px; }
+.small { font-size: 14px; fill: #5a5a5a; }
+.node { fill: white; stroke: #555; stroke-width: 1.8; }
+.edge { fill: none; stroke: #777; stroke-width: 2.0; marker-end: url(#arrow); }
+.focus { fill: none; stroke: #202020; stroke-width: 3.6; marker-end: url(#arrowBold); }
+.scc { fill: none; stroke: #202020; stroke-width: 2.4; stroke-dasharray: 9 6; }
+.cell { fill: white; stroke: #777; stroke-width: 1.2; }
+.cellHi { fill: #e8e8e8; stroke: #202020; stroke-width: 1.6; }
+</style>
+
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L9,3 z" fill="#777"/>
+  </marker>
+  <marker id="arrowBold" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L9,3 z" fill="#202020"/>
+  </marker>
+</defs>
+<rect x="52" y="36" width="140" height="48" class="cellHi"/><text x="122.0" y="66" text-anchor="middle" class="label">변수</text><rect x="192" y="36" width="140" height="48" class="cellHi"/><text x="262.0" y="66" text-anchor="middle" class="label">x</text><rect x="332" y="36" width="140" height="48" class="cellHi"/><text x="402.0" y="66" text-anchor="middle" class="label">¬x</text><rect x="472" y="36" width="260" height="48" class="cellHi"/><text x="602.0" y="66" text-anchor="middle" class="label">반대 정점</text><rect x="52" y="84" width="140" height="52" class="cell"/><text x="122.0" y="117" text-anchor="middle" class="label">1</text><rect x="192" y="84" width="140" height="52" class="cell"/><text x="262.0" y="117" text-anchor="middle" class="label">1</text><rect x="332" y="84" width="140" height="52" class="cell"/><text x="402.0" y="117" text-anchor="middle" class="label">2</text><rect x="472" y="84" width="260" height="52" class="cell"/><text x="602.0" y="117" text-anchor="middle" class="label">id ^ 1</text><rect x="52" y="136" width="140" height="52" class="cell"/><text x="122.0" y="169" text-anchor="middle" class="label">2</text><rect x="192" y="136" width="140" height="52" class="cell"/><text x="262.0" y="169" text-anchor="middle" class="label">3</text><rect x="332" y="136" width="140" height="52" class="cell"/><text x="402.0" y="169" text-anchor="middle" class="label">4</text><rect x="472" y="136" width="260" height="52" class="cell"/><text x="602.0" y="169" text-anchor="middle" class="label">id ^ 1</text><rect x="52" y="188" width="140" height="52" class="cell"/><text x="122.0" y="221" text-anchor="middle" class="label">3</text><rect x="192" y="188" width="140" height="52" class="cell"/><text x="262.0" y="221" text-anchor="middle" class="label">5</text><rect x="332" y="188" width="140" height="52" class="cell"/><text x="402.0" y="221" text-anchor="middle" class="label">6</text><rect x="472" y="188" width="260" height="52" class="cell"/><text x="602.0" y="221" text-anchor="middle" class="label">id ^ 1</text></svg>
