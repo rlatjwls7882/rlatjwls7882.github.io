@@ -6,19 +6,37 @@ import { list } from './list'
 
 const posts = await getCollection('blog', ({ data }) => !data.draft)
 
-const postByUrl = new Map(
-  posts.map((post) => [getPostUrl(post.id), post]),
-)
+const getCppPostKey = (id: string) => {
+  const slug = id
+    .replace(/\\/g, '/')
+    .replace(/\.(md|mdx)$/, '')
+    .replace(/\/index$/, '')
+
+  const [root, path, name] = slug.split('/')
+
+  if (root?.toLowerCase().replace(/\s+/g, '-') !== 'cpp-algorithm') return null
+  if (!path || !name) return null
+
+  return `${path}/${name}`
+}
+
+const postByKey = new Map<string, typeof posts[number]>()
+
+for (const post of posts) {
+  const key = getCppPostKey(post.id)
+  if (key) postByKey.set(key, post)
+}
 
 const groups = list.map((group) => ({
   ...group,
-  items: group.items.map((item) => {
-    const url = `/blog/cpp-algorithm/${group.path}/${item.slug}`
+  items: group.items.map((slug) => {
+    const post = postByKey.get(`${group.path}/${slug}`)
 
     return {
-      ...item,
-      url,
-      category: postByUrl.get(url)?.data.tags[0] ?? '',
+      slug,
+      title: post?.data.title ?? slug,
+      url: post ? getPostUrl(post.id) : `/blog/cpp-algorithm/${group.path}/${slug}`,
+      category: post?.data.tags[0] ?? '',
     }
   }),
 }))

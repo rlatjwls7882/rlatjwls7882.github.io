@@ -1,5 +1,5 @@
 ---
-title: "Exponentiation by Squaring (빠른 거듭제곱)"
+title: "Exponentiation by Squaring"
 pubDate: 2026-06-08
 tags: ["정수론"]
 ---
