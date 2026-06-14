@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="300" viewBox="0 0 830 300"><rect width="100%" height="100%" fill="white"/><style>
+text{font-family:"JetBrains Mono","Consolas","Noto Sans Mono CJK KR",monospace;fill:#202020}
+.label{font-size:18px}.small{font-size:14px;fill:#555}.tiny{font-size:13px;fill:#555}
+.axis{stroke:#777;stroke-width:1.4;marker-end:url(#arrowGray)}
+.line{fill:none;stroke:#777;stroke-width:1.8}
+.lineHi{fill:none;stroke:#202020;stroke-width:3}
+.hull{fill:none;stroke:#202020;stroke-width:3.2}
+.dash{fill:none;stroke:#999;stroke-width:1.5;stroke-dasharray:6 5}
+.point{fill:white;stroke:#202020;stroke-width:2}
+.box{fill:white;stroke:#777;stroke-width:1.2;rx:5}.boxHi{fill:#eee;stroke:#202020;stroke-width:2;rx:5}
+.cell{fill:white;stroke:#777;stroke-width:1.2}.cellHi{fill:#eee;stroke:#202020;stroke-width:2}.cellPop{fill:#f7f7f7;stroke:#202020;stroke-width:2;stroke-dasharray:5 4}
+.arrow{fill:none;stroke:#202020;stroke-width:1.7;marker-end:url(#arrow)}
+</style><defs>
+<marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#202020"/></marker>
+<marker id="arrowGray" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#777"/></marker>
+</defs><rect x="75" y="60" width="280" height="55" class="boxHi"/><text x="215.0" y="93.5" text-anchor="middle" class="label">dp[i] = min(b[j]a[i] + dp[j])</text><path d="M 370 88 L 465 88" class="arrow"/><rect x="480" y="60" width="250" height="55" class="boxHi"/><text x="605.0" y="93.5" text-anchor="middle" class="label">y = mx + c</text><rect x="90" y="165" width="170" height="48" class="box"/><text x="175.0" y="195.0" text-anchor="middle" class="label">x = a[i]</text><rect x="325" y="165" width="170" height="48" class="box"/><text x="410.0" y="195.0" text-anchor="middle" class="label">m = b[j]</text><rect x="560" y="165" width="170" height="48" class="box"/><text x="645.0" y="195.0" text-anchor="middle" class="label">c = dp[j]</text></svg>

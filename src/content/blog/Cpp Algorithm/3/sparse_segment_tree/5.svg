@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="300" viewBox="0 0 820 300"><rect width="100%" height="100%" fill="white"/><style>
+text{font-family:"JetBrains Mono","Consolas","Noto Sans Mono CJK KR",monospace;fill:#202020}
+.label{font-size:18px}.small{font-size:14px;fill:#555}.tiny{font-size:13px;fill:#555}
+.node{fill:white;stroke:#555;stroke-width:1.8}.nodeHi{fill:#eee;stroke:#202020;stroke-width:2.3}
+.nodeMissing{fill:white;stroke:#aaa;stroke-width:1.6;stroke-dasharray:5 4}
+.lazy{fill:white;stroke:#777;stroke-width:1.2;rx:5}.lazyHi{fill:#eee;stroke:#202020;stroke-width:2;rx:5}
+.edge{fill:none;stroke:#888;stroke-width:1.7}.edgeHi{fill:none;stroke:#202020;stroke-width:3}
+.edgeMissing{fill:none;stroke:#aaa;stroke-width:1.5;stroke-dasharray:5 4}
+.cell{fill:white;stroke:#777;stroke-width:1.2}.cellHi{fill:#eee;stroke:#202020;stroke-width:2}
+.box{fill:white;stroke:#777;stroke-width:1.2;rx:5}.boxHi{fill:#eee;stroke:#202020;stroke-width:2;rx:5}
+.arrow{fill:none;stroke:#202020;stroke-width:1.7;marker-end:url(#arrow)}
+</style><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#202020"/></marker></defs><text x="142" y="72" text-anchor="end" class="label">field</text><rect x="160" y="45" width="130" height="42" class="cellHi"/><text x="225.0" y="72" text-anchor="middle" class="label">l</text><rect x="290" y="45" width="130" height="42" class="cellHi"/><text x="355.0" y="72" text-anchor="middle" class="label">r</text><rect x="420" y="45" width="130" height="42" class="cellHi"/><text x="485.0" y="72" text-anchor="middle" class="label">val</text><rect x="550" y="45" width="130" height="42" class="cellHi"/><text x="615.0" y="72" text-anchor="middle" class="label">lazy</text><text x="142" y="142" text-anchor="end" class="label">value</text><rect x="160" y="115" width="130" height="42" class="cell"/><text x="225.0" y="142" text-anchor="middle" class="label">left idx</text><rect x="290" y="115" width="130" height="42" class="cell"/><text x="355.0" y="142" text-anchor="middle" class="label">right idx</text><rect x="420" y="115" width="130" height="42" class="cell"/><text x="485.0" y="142" text-anchor="middle" class="label">sum</text><rect x="550" y="115" width="130" height="42" class="cell"/><text x="615.0" y="142" text-anchor="middle" class="label">pending</text><text x="420" y="224" text-anchor="middle" class="label">없는 자식은 -1</text><text x="420" y="260" text-anchor="middle" class="small">필요할 때 addNode()로 생성</text></svg>

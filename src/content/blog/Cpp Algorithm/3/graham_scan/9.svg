@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="310" viewBox="0 0 850 310"><rect width="100%" height="100%" fill="white"/><style>
+text{font-family:"JetBrains Mono","Consolas","Noto Sans Mono CJK KR",monospace;fill:#202020}
+.label{font-size:18px}.small{font-size:14px;fill:#555}.tiny{font-size:13px;fill:#555}
+.point{fill:white;stroke:#202020;stroke-width:2}.pointHi{fill:#eee;stroke:#202020;stroke-width:2.6}
+.line{fill:none;stroke:#888;stroke-width:1.8}.lineHi{fill:none;stroke:#202020;stroke-width:3.2}
+.hull{fill:none;stroke:#202020;stroke-width:3.2}
+.dash{fill:none;stroke:#777;stroke-width:1.5;stroke-dasharray:6 5}
+.arc{fill:none;stroke:#555;stroke-width:1.8;marker-end:url(#arrowSmall)}
+.box{fill:white;stroke:#777;stroke-width:1.2;rx:5}.boxHi{fill:#eee;stroke:#202020;stroke-width:2;rx:5}
+.cell{fill:white;stroke:#777;stroke-width:1.2}.cellHi{fill:#eee;stroke:#202020;stroke-width:2}.cellPop{fill:#f7f7f7;stroke:#202020;stroke-width:2;stroke-dasharray:5 4}
+.arrow{fill:none;stroke:#202020;stroke-width:1.7;marker-end:url(#arrow)}
+</style><defs>
+<marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#202020"/></marker>
+<marker id="arrowSmall" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#555"/></marker>
+</defs><text x="132" y="69" text-anchor="end" class="label">step</text><rect x="150" y="42" width="160" height="42" class="cellHi"/><text x="230.0" y="69" text-anchor="middle" class="label">pivot</text><rect x="310" y="42" width="160" height="42" class="cellHi"/><text x="390.0" y="69" text-anchor="middle" class="label">p,q</text><rect x="470" y="42" width="160" height="42" class="cellHi"/><text x="550.0" y="69" text-anchor="middle" class="label">sort</text><rect x="630" y="42" width="160" height="42" class="cellHi"/><text x="710.0" y="69" text-anchor="middle" class="label">scan</text><text x="132" y="137" text-anchor="end" class="label">value</text><rect x="150" y="110" width="160" height="42" class="cell"/><text x="230.0" y="137" text-anchor="middle" class="label">lowest point</text><rect x="310" y="110" width="160" height="42" class="cell"/><text x="390.0" y="137" text-anchor="middle" class="label">x-p.x, y-p.y</text><rect x="470" y="110" width="160" height="42" class="cell"/><text x="550.0" y="137" text-anchor="middle" class="label">angle</text><rect x="630" y="110" width="160" height="42" class="cell"/><text x="710.0" y="137" text-anchor="middle" class="label">ccw</text><text x="132" y="205" text-anchor="end" class="label">remove</text><rect x="150" y="178" width="160" height="42" class="cell"/><text x="230.0" y="205" text-anchor="middle" class="label">-</text><rect x="310" y="178" width="160" height="42" class="cell"/><text x="390.0" y="205" text-anchor="middle" class="label">-</text><rect x="470" y="178" width="160" height="42" class="cell"/><text x="550.0" y="205" text-anchor="middle" class="label">-</text><rect x="630" y="178" width="160" height="42" class="cellHi"/><text x="710.0" y="205" text-anchor="middle" class="label">ccw &lt;= 0</text></svg>

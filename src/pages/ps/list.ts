@@ -133,6 +133,30 @@ export const list = [
         title: 'Trie',
         slug: 'trie',
       },
+      {
+        title: 'Segment Tree',
+        slug: 'segment_tree',
+      },
+      {
+        title: 'Fenwick Tree (Binary Indexed Tree)',
+        slug: 'fenwick_tree',
+      },
+      {
+        title: 'Dynamic Segment Tree',
+        slug: 'dynamic_segment_tree',
+      },
+      {
+        title: 'CCW (Counter-Clockwise)',
+        slug: 'ccw',
+      },
+      {
+        title: 'Line Intersection',
+        slug: 'line_intersection',
+      },
+      {
+        title: 'Offline Query',
+        slug: 'offline_query',
+      },
     ],
   },
   {
@@ -174,6 +198,66 @@ export const list = [
       {
         title: 'Hopcroft-Karp Algorithm',
         slug: 'hopcroft-karp',
+      },
+      {
+        title: 'Aho-Corasick',
+        slug: 'aho-corasick',
+      },
+      {
+        title: 'Rope',
+        slug: 'rope',
+      },
+      {
+        title: 'Walking on Segment Tree',
+        slug: 'walking_on_segment_tree',
+      },
+      {
+        title: 'Segment Tree with Lazy Propagation',
+        slug: 'segment_tree_with_lazy_propagation',
+      },
+      {
+        title: 'Merge Sort Tree',
+        slug: 'merge_sort_tree',
+      },
+      {
+        title: 'Sparse Segment Tree (Dynamic Segment Tree with Lazy Propagation)',
+        slug: 'sparse_segment_tree',
+      },
+      {
+        title: 'HLD (Heavy-Light Decomposition)',
+        slug: 'hld',
+      },
+      {
+        title: 'Graham’s Scan',
+        slug: 'graham_scan',
+      },
+      {
+        title: 'Point in Convex Polygon',
+        slug: 'point_in_convex_polygon',
+      },
+      {
+        title: 'Rotating Calipers',
+        slug: 'rotating_calipers',
+      },
+      {
+        title: 'Deque Trick',
+        slug: 'deque_trick',
+      },
+      {
+        title: 'CHT (Convex Hull Trick)',
+        slug: 'cht',
+      },
+      {
+        title: 'Square Root Decomposition',
+        slug: 'square_root_decomposition',
+      },
+      {
+        title: 'Mo’s Algorithm',
+        slug: 'mo',
+      },
+      {
+        title: 'PBS (Parallel Binary Search)',
+        slug: 'pbs',
       },
     ],
   },

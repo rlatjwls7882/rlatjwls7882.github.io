@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="250" viewBox="0 0 760 250"><rect width="100%" height="100%" fill="white"/><style>
+text{font-family:"JetBrains Mono","Consolas","Noto Sans Mono CJK KR",monospace;fill:#202020}
+.label{font-size:18px}.small{font-size:14px;fill:#555}.tiny{font-size:13px;fill:#555}
+.cell{fill:white;stroke:#777;stroke-width:1.2}
+.cellHi{fill:#eee;stroke:#202020;stroke-width:2}
+.cellMute{fill:#fafafa;stroke:#bbb;stroke-width:1}
+.arrow{fill:none;stroke:#202020;stroke-width:1.8;marker-end:url(#arrow)}
+.guide{fill:none;stroke:#777;stroke-width:1.5;stroke-dasharray:6 5;marker-end:url(#arrowGray)}
+</style><defs>
+<marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#202020"/></marker>
+<marker id="arrowGray" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#777"/></marker>
+</defs><text x="140" y="72" text-anchor="end" class="label">prefix</text><rect x="158" y="45" width="150" height="42" class="cellHi"/><text x="233.0" y="72" text-anchor="middle" class="label">query(2)</text><rect x="308" y="45" width="150" height="42" class="cell"/><text x="383.0" y="72" text-anchor="middle" class="label">query(3)</text><rect x="458" y="45" width="150" height="42" class="cellHi"/><text x="533.0" y="72" text-anchor="middle" class="label">query(7)</text><text x="383" y="145" text-anchor="middle" class="label">sum(3, 7) = query(7) - query(2)</text><path d="M 533 92 L 430 122" class="arrow"/><path d="M 233 92 L 335 122" class="arrow"/></svg>

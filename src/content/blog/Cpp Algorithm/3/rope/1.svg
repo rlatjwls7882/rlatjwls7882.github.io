@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="320" viewBox="0 0 720 320"><rect width="100%" height="100%" fill="white"/><style>
+text{font-family:"JetBrains Mono","Consolas","Noto Sans Mono CJK KR",monospace;fill:#202020}
+.label{font-size:18px}.small{font-size:14px;fill:#555}
+.cell{fill:white;stroke:#777;stroke-width:1.2}
+.cellHi{fill:#eee;stroke:#202020;stroke-width:2}
+.chunk{fill:white;stroke:#777;stroke-width:1.5;rx:6}
+.chunkHi{fill:#eee;stroke:#202020;stroke-width:2;rx:6}
+.node{fill:white;stroke:#555;stroke-width:1.8}
+.edge{fill:none;stroke:#888;stroke-width:1.7}
+.arrow{fill:none;stroke:#202020;stroke-width:1.7;marker-end:url(#arrow)}
+</style><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#202020"/></marker></defs><circle cx="360" cy="70" r="28" class="node"/><text x="360" y="76" text-anchor="middle" class="small">root</text><circle cx="230" cy="150" r="28" class="node"/><circle cx="490" cy="150" r="28" class="node"/><line x1="346" y1="95" x2="248" y2="126" class="edge"/><line x1="374" y1="95" x2="472" y2="126" class="edge"/><rect x="80" y="235" width="120" height="48" class="chunk"/><text x="140.0" y="266" text-anchor="middle" class="label">ab</text><rect x="230" y="235" width="120" height="48" class="chunk"/><text x="290.0" y="266" text-anchor="middle" class="label">cd</text><rect x="430" y="235" width="120" height="48" class="chunk"/><text x="490.0" y="266" text-anchor="middle" class="label">ef</text><rect x="580" y="235" width="120" height="48" class="chunk"/><text x="640.0" y="266" text-anchor="middle" class="label">gh</text><line x1="220" y1="177" x2="140" y2="235" class="edge"/><line x1="240" y1="177" x2="290" y2="235" class="edge"/><line x1="480" y1="177" x2="490" y2="235" class="edge"/><line x1="500" y1="177" x2="640" y2="235" class="edge"/></svg>

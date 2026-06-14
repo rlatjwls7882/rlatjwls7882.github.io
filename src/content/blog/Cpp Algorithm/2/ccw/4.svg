@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" viewBox="0 0 800 280"><rect width="100%" height="100%" fill="white"/><style>
+text{font-family:"JetBrains Mono","Consolas","Noto Sans Mono CJK KR",monospace;fill:#202020}
+.label{font-size:18px}.small{font-size:14px;fill:#555}.tiny{font-size:13px;fill:#555}
+.point{fill:white;stroke:#202020;stroke-width:2}
+.line{fill:none;stroke:#888;stroke-width:1.8}
+.vec{fill:none;stroke:#202020;stroke-width:3;marker-end:url(#arrow)}
+.arc{fill:none;stroke:#555;stroke-width:1.8;marker-end:url(#arrowSmall)}
+.box{fill:white;stroke:#777;stroke-width:1.2;rx:5}.boxHi{fill:#eee;stroke:#202020;stroke-width:2;rx:5}
+.cell{fill:white;stroke:#777;stroke-width:1.2}.cellHi{fill:#eee;stroke:#202020;stroke-width:2}
+</style><defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<path d="M0,0 L0,6 L9,3 z" fill="#202020"/></marker>
+<marker id="arrowSmall" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+<path d="M0,0 L0,6 L7,3 z" fill="#555"/></marker>
+</defs><text x="102" y="67" text-anchor="end" class="label">point</text><rect x="120" y="40" width="200" height="42" class="cell"/><text x="220.0" y="67" text-anchor="middle" class="label">A(x1,y1)</text><rect x="320" y="40" width="200" height="42" class="cell"/><text x="420.0" y="67" text-anchor="middle" class="label">B(x2,y2)</text><rect x="520" y="40" width="200" height="42" class="cell"/><text x="620.0" y="67" text-anchor="middle" class="label">C(x3,y3)</text><rect x="140" y="130" width="520" height="50" class="boxHi"/><text x="400.0" y="161.0" text-anchor="middle" class="label">cross = (x2-x1)(y3-y1) - (y2-y1)(x3-x1)</text><rect x="140" y="205" width="150" height="42" class="box"/><text x="215.0" y="232.0" text-anchor="middle" class="label">&gt; 0: CCW</text><rect x="325" y="205" width="150" height="42" class="box"/><text x="400.0" y="232.0" text-anchor="middle" class="label">&lt; 0: CW</text><rect x="510" y="205" width="150" height="42" class="box"/><text x="585.0" y="232.0" text-anchor="middle" class="label">= 0: line</text></svg>

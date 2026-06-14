@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="470" viewBox="0 0 820 470"><rect width="100%" height="100%" fill="white"/><style>
+text{font-family:"JetBrains Mono","Consolas","Noto Sans Mono CJK KR",monospace;fill:#202020}
+.label{font-size:18px}.small{font-size:14px;fill:#555}.tiny{font-size:13px;fill:#555}
+.point{fill:white;stroke:#202020;stroke-width:2}.pointHi{fill:#eee;stroke:#202020;stroke-width:2.6}
+.poly{fill:none;stroke:#555;stroke-width:2.2}
+.edge{fill:none;stroke:#888;stroke-width:1.8}.edgeHi{fill:none;stroke:#202020;stroke-width:3.4;marker-end:url(#arrow)}
+.pair{fill:none;stroke:#202020;stroke-width:2.6;stroke-dasharray:6 5}
+.box{fill:white;stroke:#777;stroke-width:1.2;rx:5}.boxHi{fill:#eee;stroke:#202020;stroke-width:2;rx:5}
+.cell{fill:white;stroke:#777;stroke-width:1.2}.cellHi{fill:#eee;stroke:#202020;stroke-width:2}
+.arrow{fill:none;stroke:#202020;stroke-width:1.7;marker-end:url(#arrow)}
+</style><defs>
+<marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+<path d="M0,0 L0,6 L8,3 z" fill="#202020"/></marker>
+</defs><polyline points="135,280 220,120 405,70 595,130 665,290 500,405 275,395 135,280" class="poly"/><line x1="135" y1="280" x2="665" y2="290" class="pair"/><circle cx="135" cy="280" r="8" class="pointHi"/><text x="135" y="265" text-anchor="middle" class="label">P0</text><circle cx="220" cy="120" r="8" class="point"/><text x="220" y="105" text-anchor="middle" class="label">P1</text><circle cx="405" cy="70" r="8" class="point"/><text x="405" y="55" text-anchor="middle" class="label">P2</text><circle cx="595" cy="130" r="8" class="point"/><text x="595" y="115" text-anchor="middle" class="label">P3</text><circle cx="665" cy="290" r="8" class="pointHi"/><text x="665" y="275" text-anchor="middle" class="label">P4</text><circle cx="500" cy="405" r="8" class="point"/><text x="500" y="390" text-anchor="middle" class="label">P5</text><circle cx="275" cy="395" r="8" class="point"/><text x="275" y="380" text-anchor="middle" class="label">P6</text><rect x="280" y="410" width="260" height="42" class="boxHi"/><text x="410.0" y="437.0" text-anchor="middle" class="label">max distance: P0 - P4</text></svg>
