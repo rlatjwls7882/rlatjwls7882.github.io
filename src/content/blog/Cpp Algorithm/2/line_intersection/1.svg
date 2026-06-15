@@ -5,11 +5,8 @@ text{font-family:"JetBrains Mono","Consolas","Noto Sans Mono CJK KR",monospace;f
 .line{fill:none;stroke:#777;stroke-width:2.2}
 .lineHi{fill:none;stroke:#202020;stroke-width:3.4}
 .dash{fill:none;stroke:#999;stroke-width:1.5;stroke-dasharray:6 5}
-.box{fill:white;stroke:#777;stroke-width:1.2;rx:5}
-.boxHi{fill:#eee;stroke:#202020;stroke-width:2;rx:5}
-.cell{fill:white;stroke:#777;stroke-width:1.2}.cellHi{fill:#eee;stroke:#202020;stroke-width:2}
 .arrow{fill:none;stroke:#202020;stroke-width:1.7;marker-end:url(#arrow)}
 </style><defs>
 <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
 <path d="M0,0 L0,6 L8,3 z" fill="#202020"/></marker>
-</defs><line x1="130" y1="270" x2="590" y2="80" class="lineHi"/><line x1="125" y1="85" x2="585" y2="270" class="lineHi"/><circle cx="130" cy="270" r="7" class="point"/><text x="130" y="254" text-anchor="middle" class="label">P1</text><circle cx="590" cy="80" r="7" class="point"/><text x="590" y="64" text-anchor="middle" class="label">P2</text><circle cx="125" cy="85" r="7" class="point"/><text x="125" y="69" text-anchor="middle" class="label">P3</text><circle cx="585" cy="270" r="7" class="point"/><text x="585" y="254" text-anchor="middle" class="label">P4</text><rect x="270" y="150" width="180" height="48" class="boxHi"/><text x="360.0" y="180.0" text-anchor="middle" class="label">intersect</text></svg>
+</defs><line x1="130" y1="270" x2="590" y2="80" class="lineHi"/><line x1="125" y1="85" x2="585" y2="270" class="lineHi"/><circle cx="130" cy="270" r="7" class="point"/><text x="130" y="254" text-anchor="middle" class="label">P1</text><circle cx="590" cy="80" r="7" class="point"/><text x="590" y="64" text-anchor="middle" class="label">P2</text><circle cx="125" cy="85" r="7" class="point"/><text x="125" y="69" text-anchor="middle" class="label">P3</text><circle cx="585" cy="270" r="7" class="point"/><text x="585" y="254" text-anchor="middle" class="label">P4</text></svg>
