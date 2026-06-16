@@ -2,13 +2,16 @@
 title: "PBDS (Ordered Set)"
 pubDate: 2026-06-03
 tags: ["자료 구조"]
+difficulty: "Platinum V"
 ---
 
-`PBDS`(Policy-Based Data Structures)는 GNU C++에서 제공하는 자료구조 모음이다.
+`PBDS`는 GNU C++에서 제공하는 자료구조 모음이다.
 
 이 글에서는 `PBDS`의 `tree`를 이용해 `ordered_set`을 만든다.
 
-`ordered_set`은 `set`처럼 중복되지 않는 원소를 정렬된 상태로 저장한다. 여기에 특정 값보다 작은 원소의 개수와 `k`번째 원소를 구하는 기능이 추가되어 있다.
+`ordered_set`은 `set`처럼 원소를 정렬된 상태로 저장한다.
+
+여기에 특정 값보다 작은 원소의 개수와 $k$번째 원소를 구하는 기능이 추가되어 있다.
 
 ## 헤더 파일
 
@@ -41,8 +44,6 @@ template<typename T> using ordered_set = tree<T, null_type, less<T>, rb_tree_tag
 ordered_set<int> s;
 ```
 
-위 코드는 `int` 자료형의 원소를 저장하는 `ordered_set`을 생성한다.
-
 ## 원소 추가와 삭제
 
 원소를 추가할 때는 `insert()`를 사용한다. $O(\log n)$
@@ -65,39 +66,33 @@ s.erase(20);
 
 ## 특정 값보다 작은 원소의 개수
 
-`order_of_key()`는 주어진 값보다 작은 원소의 개수를 반환한다. $O(\log n)$
+`order_of_key(x)`는 `x`보다 작은 원소의 개수를 반환한다. $O(\log n)$
 
 ```cpp
-s.insert(10);
-s.insert(20);
-s.insert(30);
-
 cout << s.order_of_key(20);
 ```
 
-`20`보다 작은 원소는 `10`뿐이므로 `1`이 출력된다.
+`ordered_set`에 `10`, `20`, `30`이 들어 있다면 `20`보다 작은 원소는 `10`뿐이다.
+
+따라서 `1`이 출력된다.
 
 주어진 값과 같은 원소는 포함하지 않는다.
 
 ## k번째 원소
 
-`find_by_order()`는 `k`번째 원소를 가리키는 이터레이터를 반환한다. $O(\log n)$
+`find_by_order(k)`는 $k$번째 원소를 가리키는 이터레이터를 반환한다. $O(\log n)$
 
 인덱스는 $0$부터 시작한다.
 
 ```cpp
-s.insert(10);
-s.insert(20);
-s.insert(30);
-
 cout << *s.find_by_order(0);
 cout << *s.find_by_order(1);
 cout << *s.find_by_order(2);
 ```
 
-위 코드를 실행하면 `10`, `20`, `30`이 차례대로 출력된다.
+`ordered_set`에 `10`, `20`, `30`이 들어 있다면 `10`, `20`, `30`이 차례대로 출력된다.
 
-`k`가 원소의 개수 이상이라면 `end()`를 반환한다.
+$k$가 원소의 개수 이상이라면 `end()`를 반환한다.
 
 ```cpp
 if(s.find_by_order(k)==s.end()) {

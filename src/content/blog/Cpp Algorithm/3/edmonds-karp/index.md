@@ -2,17 +2,18 @@
 title: "Edmonds-Karp Algorithm"
 pubDate: 2026-06-11
 tags: ["그래프", "최대 유량"]
+difficulty: "Platinum IV"
 ---
 
-에드몬드-카프는 source에서 sink까지 보낼 수 있는 최대 유량을 구하는 알고리즘이다.
+`Edmonds-Karp`는 `source`에서 `sink`까지 보낼 수 있는 최대 유량을 구하는 알고리즘이다.
 
-잔여 용량이 있는 간선만 따라가며 BFS로 증가 경로를 찾고 더 이상 증가 경로가 없을 때까지 유량을 보낸다.
+잔여 용량이 있는 간선만 따라가며 `BFS`로 증가 경로를 찾고 더 이상 증가 경로가 없을 때까지 유량을 보낸다.
 
 ## 최대 유량
 
 유량 네트워크는 방향 그래프의 각 간선에 용량이 정해져 있는 그래프이다.
 
-source는 유량이 출발하는 정점이고 sink는 유량이 도착하는 정점이다.
+`source`는 유량이 출발하는 정점이고 `sink`는 유량이 도착하는 정점이다.
 
 간선의 용량은 해당 간선을 통해 보낼 수 있는 유량의 최댓값이다.
 
@@ -20,31 +21,34 @@ source는 유량이 출발하는 정점이고 sink는 유량이 도착하는 정
 
 그림의 `f/c`에서 `f`는 현재 유량이고 `c`는 간선의 용량이다.
 
-예를 들어 `0/2`는 현재 유량이 `0`이고 최대 `2`만큼 보낼 수 있다는 뜻이다.
+예를 들어 `0/2`는 현재 유량이 $0$이고 최대 $2$만큼 보낼 수 있다는 뜻이다.
 
-## 동작 원리
+## 증가 경로 찾기
 
-현재 유량이 `flow[u][v]`이고 용량이 `capacity[u][v]`라고 하자.
+현재 유량이 `f[u][v]`이고 용량이 `c[u][v]`라고 하자.
 
 간선 `u → v`를 통해 추가로 보낼 수 있는 유량은 다음과 같다.
 
 ```cpp
-capacity[u][v]-flow[u][v]
+c[u][v]-f[u][v]
 ```
 
 이 값을 잔여 용량이라고 한다.
 
-잔여 용량이 양수인 간선만 따라가며 BFS를 수행한다.
+잔여 용량이 양수인 간선만 따라가며 `BFS`를 수행한다.
 
 ```cpp
-if(capacity[cur][nxt]-flow[cur][nxt]>0) {
-    ...
+if(c[cur][next]-f[cur][next] && prv[next]==-1) {
+    prv[next]=cur;
+    q.push(next);
 }
 ```
 
-sink에 도달하면 `prev` 배열을 이용해 source까지 거슬러 올라간다.
+`prv[x]`에는 `BFS`에서 정점 `x`로 오기 직전의 정점을 저장한다.
 
-첫 번째 BFS에서는 다음 증가 경로를 찾을 수 있다.
+`sink`에 도달하면 `prv`를 따라 `source`까지 거슬러 올라가 증가 경로를 복원한다.
+
+첫 번째 `BFS`에서는 다음 증가 경로를 찾을 수 있다.
 
 ```text
 S → 1 → 2 → E
@@ -52,21 +56,21 @@ S → 1 → 2 → E
 
 ![첫 번째 증가 경로로 유량을 보낸 상태](2.svg)
 
-이 경로의 잔여 용량은 각각 `2`, `2`, `2`이다.
+이 경로의 잔여 용량은 각각 $2$, $2$, $2$이다.
 
-따라서 경로를 통해 보낼 수 있는 유량은 `2`이다.
+따라서 경로를 통해 보낼 수 있는 유량은 $2$이다.
 
 ```cpp
-f=min(f, capacity[prev[cur]][cur]-flow[prev[cur]][cur]);
+flow=min(flow, c[prv[i]][i]-f[prv[i]][i]);
 ```
 
 경로의 모든 간선에 유량을 더한다.
 
 ```cpp
-flow[prev[cur]][cur]+=f;
+f[prv[i]][i]+=flow;
 ```
 
-다시 BFS를 수행하면 다음 경로를 찾을 수 있다.
+다시 `BFS`를 수행하면 다음 경로를 찾을 수 있다.
 
 ```text
 S → 3 → 4 → E
@@ -74,11 +78,11 @@ S → 3 → 4 → E
 
 ![두 번째 증가 경로로 유량을 보낸 상태](3.svg)
 
-이 경로를 통해 유량 `1`을 추가로 보낼 수 있다.
+이 경로를 통해 유량 $1$을 추가로 보낼 수 있다.
 
-더 이상 source에서 sink까지 도달할 수 있는 증가 경로가 없다면 알고리즘을 종료한다.
+더 이상 `source`에서 `sink`까지 도달할 수 있는 증가 경로가 없다면 알고리즘을 종료한다.
 
-최대 유량은 `3`이다.
+예시에서 최대 유량은 $3$이다.
 
 ## 역방향 간선
 
@@ -88,19 +92,19 @@ S → 3 → 4 → E
 
 ![역방향 간선이 필요한 상태](4.svg)
 
-순방향 간선 `u → v`로 유량 `f`를 보낼 때 역방향 간선 `v → u`의 유량은 `f`만큼 감소시킨다.
+순방향 간선 `u → v`로 유량 `flow`를 보낼 때 역방향 간선 `v → u`의 유량은 `flow`만큼 감소시킨다.
 
 ```cpp
-flow[u][v]+=f;
-flow[v][u]-=f;
+f[u][v]+=flow;
+f[v][u]-=flow;
 ```
 
-역방향 간선의 초기 용량은 `0`이지만 유량이 음수가 되므로 잔여 용량이 생긴다.
+역방향 간선의 초기 용량은 $0$이지만 유량이 음수가 되므로 잔여 용량이 생긴다.
 
 ```text
-capacity[v][u] - flow[v][u]
-= 0 - (-f)
-= f
+c[v][u] - f[v][u]
+= 0 - (-flow)
+= flow
 ```
 
 따라서 잔여 그래프에서는 역방향 간선을 따라가며 기존 유량을 취소할 수 있다.
@@ -121,65 +125,59 @@ S → 1 → 2 → 3 → 4 → E
 
 ## 구현
 
-에드몬드-카프는 다음과 같이 구현할 수 있다. $O(VE^2)$
+`Edmonds-Karp`는 다음과 같이 구현할 수 있다. $O(VE^2)$
 
 ```cpp
-ll capacity[MAX][MAX], flow[MAX][MAX], prv[MAX];
+ll f[MAX][MAX], c[MAX][MAX], prv[MAX];
 vector<vector<int>> conn(MAX);
 
-void addEdge(int u, int v, ll c) {
-    capacity[u][v]+=c;
-    conn[u].push_back(v);
-    conn[v].push_back(u);
-}
-
-ll edmondsKarp(int source, int sink) {
+ll edmondsKarp(int s, int t) {
     ll res=0;
     while(true) {
-        queue<int> q; q.push(source);
+        queue<int> q; q.push(s);
         memset(prv, -1, sizeof prv);
-        while(!q.empty() && prv[sink]==-1) {
+        while(!q.empty() && prv[t]==-1) {
             int cur=q.front(); q.pop();
             for(int next:conn[cur]) {
-                if(capacity[cur][next]-flow[cur][next] && prv[next]==-1) {
+                if(c[cur][next]-f[cur][next] && prv[next]==-1) {
                     prv[next]=cur;
                     q.push(next);
                 }
             }
         }
-        if(prv[sink]==-1) break;
+        if(prv[t]==-1) break;
 
-        ll curFlow=INF;
-        for(int i=sink;i!=source;i=prv[i]) curFlow=min(flow, capacity[prv[i]][i]-flow[prv[i]][i]);
-        for(int i=sink;i!=source;i=prv[i]) {
-            flow[prv[i]][i]+=curFlow;
-            flow[i][prv[i]]-=curFlow;
+        ll flow=LINF;
+        for(int i=t;i!=s;i=prv[i]) flow=min(flow, c[prv[i]][i]-f[prv[i]][i]);
+        for(int i=t;i!=s;i=prv[i]) {
+            f[prv[i]][i]+=flow;
+            f[i][prv[i]]-=flow;
         }
-        res+=curFlow;
+        res+=flow;
     }
-    cout << res;
+    return res;
 }
 ```
 
-방향 간선 `u → v`의 용량이 `c`라면 다음과 같이 추가한다.
+방향 간선 `u → v`의 용량이 `w`라면 다음과 같이 추가한다.
 
 ```cpp
-addEdge(u, v, c);
+c[u][v]+=w;
+conn[u].push_back(v);
+conn[v].push_back(u);
 ```
 
-역방향 간선도 인접 리스트에 넣어야 BFS에서 기존 유량을 취소하는 경로를 찾을 수 있다.
+역방향 간선도 인접 리스트에 넣어야 `BFS`에서 기존 유량을 취소하는 경로를 찾을 수 있다.
 
 같은 두 정점 사이에 여러 간선이 들어올 수 있으므로 용량은 더한다.
 
 ```cpp
-capacity[u][v]+=c;
+c[u][v]+=w;
 ```
 
-## 시간복잡도
+한 번의 `BFS`에는 $O(E)$가 걸린다.
 
-한 번의 BFS에는 $O(E)$가 걸린다.
-
-에드몬드-카프에서는 증가 경로를 최대 $O(VE)$번 찾는다.
+`Edmonds-Karp`에서는 증가 경로를 최대 $O(VE)$번 찾는다.
 
 따라서 전체 시간복잡도는 $O(VE^2)$이다.
 
