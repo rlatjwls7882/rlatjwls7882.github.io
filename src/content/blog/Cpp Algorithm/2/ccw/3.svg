@@ -1,35 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="230" viewBox="0 0 640 230">
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="190" viewBox="0 0 500 190">
 <rect width="100%" height="100%" fill="white"/>
+
 <style>
 text{font-family:"JetBrains Mono","Consolas","Noto Sans Mono CJK KR",monospace;fill:#202020}
-.label{font-size:16px}
-.small{font-size:14px;fill:#333}
-.point{fill:white;stroke:#202020;stroke-width:1.8}
-.line{fill:none;stroke:#202020;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.turn{fill:none;stroke:#777;stroke-width:1.7;stroke-linecap:round}
-.faint{fill:none;stroke:#bbb;stroke-width:1.2;stroke-linecap:round}
+.point{fill:white;stroke:#202020;stroke-width:1.4}
+.pointHi{fill:#e0e0e0;stroke:#202020;stroke-width:1.6}
+.vec{stroke:#202020;stroke-width:1.8;fill:none;marker-end:url(#arrow)}
+.line{stroke:#202020;stroke-width:1.4;fill:none}
+.arc{stroke:#777;stroke-width:1.5;fill:none;marker-end:url(#arrowGray)}
+.label{font-size:13px}
+.formula{font-size:14px}
+.small{font-size:12px}
+.overarrow{stroke:#202020;stroke-width:1.0;fill:none;marker-end:url(#smallArrow)}
 </style>
 <defs>
-  <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
-    <path d="M0,0 L0,6 L8,3 z" fill="#202020"/>
-  </marker>
-  <marker id="arrowGray" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
-    <path d="M0,0 L0,6 L8,3 z" fill="#777"/>
-  </marker>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<path d="M0,0 L0,6 L9,3 z" fill="#202020"/>
+</marker>
+<marker id="arrowGray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<path d="M0,0 L0,6 L9,3 z" fill="#777"/>
+</marker>
+<marker id="smallArrow" markerWidth="6" markerHeight="6" refX="5" refY="2" orient="auto">
+<path d="M0,0 L0,4 L6,2 z" fill="#202020"/>
+</marker>
 </defs>
 
-<path d="M 110 145 L 530 145" class="faint"/>
-<path d="M 150 145 L 485 145" class="line" marker-end="url(#arrow)"/>
 
-<circle cx="150" cy="145" r="6" class="point"/>
-<circle cx="320" cy="145" r="6" class="point"/>
-<circle cx="490" cy="145" r="6" class="point"/>
-
-<text x="143" y="127" class="label">A</text>
-<text x="313" y="127" class="label">B</text>
-<text x="483" y="127" class="label">C</text>
-
-<text x="254" y="85" class="small">ccw = 0</text>
-<text x="354" y="85" class="small">return 0</text>
+<line x1="90" y1="120" x2="410" y2="120" class="line"/>
+<circle cx="90" cy="120" r="6" class="pointHi"/><text x="90" y="144" text-anchor="middle" class="label">A</text>
+<circle cx="250" cy="120" r="6" class="point"/><text x="250" y="108" text-anchor="middle" class="label">B</text>
+<circle cx="410" cy="120" r="6" class="point"/><text x="410" y="144" text-anchor="middle" class="label">C</text>
 
 </svg>

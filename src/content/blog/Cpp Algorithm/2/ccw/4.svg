@@ -1,24 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="150" viewBox="0 0 640 150">
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="250" viewBox="0 0 560 250">
 <rect width="100%" height="100%" fill="white"/>
+
 <style>
 text{font-family:"JetBrains Mono","Consolas","Noto Sans Mono CJK KR",monospace;fill:#202020}
-.label{font-size:16px}
-.small{font-size:14px;fill:#333}
-.point{fill:white;stroke:#202020;stroke-width:1.8}
-.line{fill:none;stroke:#202020;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.turn{fill:none;stroke:#777;stroke-width:1.7;stroke-linecap:round}
-.faint{fill:none;stroke:#bbb;stroke-width:1.2;stroke-linecap:round}
+.point{fill:white;stroke:#202020;stroke-width:1.4}
+.pointHi{fill:#e0e0e0;stroke:#202020;stroke-width:1.6}
+.vec{stroke:#202020;stroke-width:1.8;fill:none;marker-end:url(#arrow)}
+.line{stroke:#202020;stroke-width:1.4;fill:none}
+.arc{stroke:#777;stroke-width:1.5;fill:none;marker-end:url(#arrowGray)}
+.label{font-size:13px}
+.formula{font-size:14px}
+.small{font-size:12px}
+.overarrow{stroke:#202020;stroke-width:1.0;fill:none;marker-end:url(#smallArrow)}
 </style>
 <defs>
-  <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
-    <path d="M0,0 L0,6 L8,3 z" fill="#202020"/>
-  </marker>
-  <marker id="arrowGray" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
-    <path d="M0,0 L0,6 L8,3 z" fill="#777"/>
-  </marker>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<path d="M0,0 L0,6 L9,3 z" fill="#202020"/>
+</marker>
+<marker id="arrowGray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<path d="M0,0 L0,6 L9,3 z" fill="#777"/>
+</marker>
+<marker id="smallArrow" markerWidth="6" markerHeight="6" refX="5" refY="2" orient="auto">
+<path d="M0,0 L0,4 L6,2 z" fill="#202020"/>
+</marker>
 </defs>
 
-<rect x="80" y="42" width="480" height="66" rx="6" fill="white" stroke="#202020" stroke-width="1.6"/>
-<text x="320" y="83" text-anchor="middle" class="label">cross(AB, AC) = AB.x × AC.y - AB.y × AC.x</text>
+
+<circle cx="120" cy="190" r="6" class="pointHi"/>
+<circle cx="460" cy="190" r="6" class="point"/>
+<circle cx="300" cy="55" r="6" class="point"/>
+
+<text x="110" y="181" text-anchor="middle" class="label">A</text>
+<text x="472" y="181" text-anchor="middle" class="label">B</text>
+<text x="300" y="42" text-anchor="middle" class="label">C</text>
+
+<line x1="126" y1="190" x2="448" y2="190" class="vec"/>
+<line x1="125" y1="186" x2="290" y2="63" class="vec"/>
+
+<g transform="translate(275,212)">
+<text x="0" y="0" class="formula">AB = B - A</text>
+<line x1="0" y1="-13" x2="16" y2="-13" class="overarrow"/>
+</g>
+
+<g transform="translate(198,112) rotate(-37)">
+<text x="0" y="0" class="formula">AC = C - A</text>
+<line x1="0" y1="-13" x2="16" y2="-13" class="overarrow"/>
+</g>
+
+<g transform="translate(365,120)">
+<text x="0" y="0" class="formula">cross(AB, AC)</text>
+<line x1="43" y1="-13" x2="59" y2="-13" class="overarrow"/>
+<line x1="72" y1="-13" x2="88" y2="-13" class="overarrow"/>
+</g>
 
 </svg>

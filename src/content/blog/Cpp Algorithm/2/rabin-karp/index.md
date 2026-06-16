@@ -2,13 +2,14 @@
 title: "Rabin-Karp Algorithm"
 pubDate: 2026-06-13
 tags: ["문자열", "해싱"]
+difficulty: "Platinum V"
 ---
 
 라빈-카프는 문자열을 해시값으로 바꾸어 패턴을 찾는 알고리즘이다.
 
 길이가 같은 문자열은 해시값 하나로 비교할 수 있다.
 
-접두사 해시를 이용하면 각 부분 문자열의 해시값도 $O(1)$에 구할 수 있다.
+접두사 해시를 이용하면 부분 문자열의 해시값을 $O(1)$에 구할 수 있다.
 
 ## 문자열 해시
 
@@ -20,7 +21,7 @@ tags: ["문자열", "해싱"]
 H("ABA") = A × P² + B × P + A  (mod M)
 ```
 
-문자를 하나 추가할 때는 기존 해시값에 `P`를 곱한 뒤 새로운 문자를 더한다.
+문자를 하나 추가할 때는 기존 해시값에 `P`를 곱한 뒤 새 문자를 더한다.
 
 ```cpp
 h=(h*P+ch)%M;
@@ -34,7 +35,7 @@ h=(h*P+ch)%M;
 
 ## 접두사 해시
 
-문자열의 모든 접두사 해시값을 미리 계산한다.
+문자열의 접두사 해시값을 미리 계산한다. $O(N)$
 
 ```cpp
 for(int i=1;i<=s.length();i++) {
@@ -42,9 +43,9 @@ for(int i=1;i<=s.length();i++) {
 }
 ```
 
-`h[i]`는 문자열의 `1`번부터 `i`번 문자까지의 해시값이다.
+`h[i]`는 앞에서 $i$개의 문자를 사용한 해시값이다.
 
-`b[i]`에는 `P^i`를 저장한다.
+`b[i]`에는 $P^i$를 저장한다.
 
 ```cpp
 b[0]=1;
@@ -53,17 +54,21 @@ for(int i=1;i<=s.length();i++) {
 }
 ```
 
-접두사 해시를 이용하면 `left`번부터 `right`번 문자까지의 해시값을 다음과 같이 구할 수 있다.
+## 구간 해시
+
+문자열의 `left`번부터 `right`번 문자까지의 해시값은 다음과 같이 구한다.
 
 ![접두사 해시를 이용해 구간 해시를 구하는 상태](2.svg)
-
-`getHash(left, right)`는 `left`번부터 `right`번 문자까지의 해시값을 반환한다.
 
 ```cpp
 ll getHash(int left, int right) {
     return (h[right]-h[left-1]*b[right-left+1]%M+M)%M;
 }
 ```
+
+앞쪽 접두사 해시 `h[left-1]`에 $P^{right-left+1}$을 곱한 뒤 빼면 원하는 구간만 남는다.
+
+`+M`은 음수가 되는 것을 막기 위해 더한다.
 
 ## 패턴 탐색
 
@@ -72,10 +77,13 @@ ll getHash(int left, int right) {
 먼저 패턴의 해시값을 구한다.
 
 ```cpp
-ll patternHash=getHash(pattern);
+ll patternHash=0;
+for(char ch:pattern) {
+    patternHash=(patternHash*P+ch)%M;
+}
 ```
 
-이후 패턴과 길이가 같은 모든 부분 문자열의 해시값을 확인한다.
+이후 패턴과 길이가 같은 모든 부분 문자열의 해시값을 비교한다.
 
 ![각 부분 문자열의 해시값을 비교한 상태](3.svg)
 
@@ -87,21 +95,31 @@ for(int i=1;i+pattern.length()-1<=text.length();i++) {
 }
 ```
 
-예시에서는 `1`번과 `3`번 위치에서 패턴을 찾을 수 있다.
+예를 들어 `pattern`의 길이가 $3$이라면 다음 구간들을 확인한다.
 
-![패턴을 찾은 상태](4.svg)
+```text
+getHash(1, 3)
+getHash(2, 4)
+getHash(3, 5)
+getHash(4, 6)
+getHash(5, 7)
+```
+
+패턴의 해시값과 구간 해시값이 같으면 해당 위치에서 패턴을 찾은 것으로 본다.
 
 ## 해시 충돌
 
 서로 다른 문자열이 같은 해시값을 가질 수 있다.
 
-![서로 다른 문자열의 해시값이 같은 상태](5.svg)
+![서로 다른 문자열의 해시값이 같은 상태](4.svg)
 
 이러한 현상을 해시 충돌이라고 한다.
 
+해시 충돌 가능성을 줄이려면 큰 `M`과 적절한 `P`를 사용하거나 해시를 두 개 사용할 수 있다.
+
 ## 구현
 
-라빈-카프는 다음과 같이 구현할 수 있다.
+라빈-카프는 다음과 같이 구현할 수 있다. $O(N+M)$
 
 ```cpp
 const ll M=3'037'000'493, P=1'343'457'632;
@@ -120,9 +138,9 @@ ll getHash(int left, int right) {
 }
 
 ll getHash(const string& s) {
-    ll h=0;
-    for(char ch:s) h=(h*P+ch)%M;
-    return h;
+    ll ret=0;
+    for(char ch:s) ret=(ret*P+ch)%M;
+    return ret;
 }
 
 vector<int> rabinKarp(const string& text, const string& pattern) {
@@ -140,11 +158,11 @@ vector<int> rabinKarp(const string& text, const string& pattern) {
 
 ## 시간복잡도
 
-문자열 `text`의 길이를 `N`이라고 하자.
+문자열 `text`의 길이를 $N$, 패턴의 길이를 $M$이라고 하자.
 
 접두사 해시를 계산하는 데 $O(N)$이 걸린다.
 
-패턴의 길이를 `M`이라고 하면 패턴의 해시값을 계산하는 데 $O(M)$이 걸린다.
+패턴의 해시값을 계산하는 데 $O(M)$이 걸린다.
 
 각 부분 문자열의 해시값은 $O(1)$에 확인할 수 있다.
 
