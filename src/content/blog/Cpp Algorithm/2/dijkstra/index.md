@@ -157,18 +157,6 @@ void dijkstra(int start, int n) {
 }
 ```
 
-`priority_queue`는 기본적으로 큰 값을 먼저 꺼낸다.
-
-비교 연산자를 반대로 설정하면 거리가 작은 후보를 먼저 꺼낼 수 있다.
-
-```cpp
-bool operator<(const element& e) const {
-    return w > e.w;
-}
-```
-
-## 음수 간선
-
 다익스트라는 음수 간선이 있으면 사용할 수 없다.
 
 이미 확정한 거리보다 더 짧은 경로가 나중에 나타날 수 있기 때문이다.
