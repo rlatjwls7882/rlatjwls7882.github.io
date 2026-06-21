@@ -126,6 +126,10 @@ void update(int i, ll val) {
 ```cpp
 ll SZ=1, arr[MAX*4];
 
+void build(int n) {
+    while(SZ<n) SZ<<=1;
+}
+
 void update(int i, ll val) {
     i+=SZ;
     arr[i]=val;
