@@ -3,6 +3,7 @@ title: "Vector"
 pubDate: 2026-05-27
 tags: ["자료 구조"]
 difficulty: "Bronze III"
+description: "동적 배열을 사용해 원소를 순서대로 저장하고 임의 접근을 빠르게 처리하는 자료구조"
 ---
 
 `vector`는 크기가 변할 수 있는 연속 배열이다.

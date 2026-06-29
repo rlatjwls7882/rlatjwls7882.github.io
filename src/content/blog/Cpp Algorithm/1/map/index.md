@@ -3,6 +3,7 @@ title: "Map"
 pubDate: 2026-06-01
 tags: ["자료 구조"]
 difficulty: "Silver V"
+description: "키와 값을 쌍으로 저장하고 키를 기준으로 탐색하는 자료구조"
 ---
 
 `map`은 키와 값을 쌍으로 저장하는 자료구조이다.

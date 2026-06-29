@@ -3,6 +3,7 @@ title: "Sparse Segment Tree (Dynamic Segment Tree with Lazy Propagation)"
 pubDate: 2026-06-14
 tags: ["자료 구조", "세그먼트 트리"]
 difficulty: "Platinum I"
+description: "Dynamic Segment Tree에 Lazy Propagation을 적용한 자료구조"
 ---
 
 `Sparse Segment Tree`는 `Dynamic Segment Tree`에 `Lazy Propagation`을 적용한 자료구조이다.

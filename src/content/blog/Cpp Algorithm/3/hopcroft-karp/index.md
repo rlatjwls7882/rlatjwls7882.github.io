@@ -3,6 +3,7 @@ title: "Hopcroft-Karp Algorithm"
 pubDate: 2026-06-12
 tags: ["그래프", "이분 매칭"]
 difficulty: "Platinum III"
+description: "여러 Shortest Augmenting Path를 한 번에 찾아 이분 그래프 최대 매칭을 구하는 알고리즘"
 ---
 
 `Hopcroft-Karp`는 이분 그래프에서 최대 매칭을 구하는 알고리즘이다.

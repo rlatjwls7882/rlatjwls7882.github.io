@@ -3,6 +3,7 @@ title: "BFS (Breadth First Search)"
 pubDate: 2026-06-05
 tags: ["그래프", "탐색", "최단 경로"]
 difficulty: "Silver II"
+description: "그래프에서 시작점과 가까운 정점부터 차례대로 탐색하는 알고리즘"
 ---
 
 BFS는 시작 정점과 가까운 정점부터 차례대로 탐색하는 알고리즘이다.

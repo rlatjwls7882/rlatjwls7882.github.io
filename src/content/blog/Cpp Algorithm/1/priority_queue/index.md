@@ -3,6 +3,7 @@ title: "Priority Queue"
 pubDate: 2026-06-01
 tags: ["자료 구조"]
 difficulty: "Silver II"
+description: "우선순위가 가장 높은 원소를 먼저 꺼내는 자료구조"
 ---
 
 `priority_queue`는 우선순위가 가장 높은 원소부터 꺼내는 자료구조이다.

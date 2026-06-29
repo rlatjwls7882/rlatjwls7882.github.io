@@ -3,6 +3,7 @@ title: "Offline Query"
 pubDate: 2026-06-14
 tags: ["쿼리 처리"]
 difficulty: "Gold IV"
+description: "쿼리 순서를 바꾸거나 미리 저장해 효율적으로 처리하는 기법"
 ---
 
 `Offline Query`는 쿼리를 입력 순서대로 바로 처리하지 않고 모두 저장한 뒤 순서를 바꾸어 처리하는 기법이다.

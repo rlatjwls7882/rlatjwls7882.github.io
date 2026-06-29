@@ -3,6 +3,7 @@ title: "Kuhn's Algorithm"
 pubDate: 2026-06-11
 tags: ["그래프", "이분 매칭"]
 difficulty: "Platinum IV"
+description: "증가 경로를 DFS로 찾아 이분 그래프의 최대 매칭을 구하는 알고리즘"
 ---
 
 `Kuhn` 알고리즘은 이분 그래프에서 최대 매칭을 구하는 알고리즘이다.

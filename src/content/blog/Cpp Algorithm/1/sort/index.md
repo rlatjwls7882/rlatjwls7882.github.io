@@ -3,6 +3,7 @@ title: "Sort"
 pubDate: 2026-06-03
 tags: ["정렬"]
 difficulty: "Bronze I"
+description: "원소를 기준에 맞게 재배치하여 원하는 순서로 만드는 알고리즘"
 ---
 
 정렬은 원소를 정해진 순서로 배치하는 작업이다.

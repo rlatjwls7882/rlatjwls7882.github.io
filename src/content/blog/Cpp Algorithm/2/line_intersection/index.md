@@ -3,6 +3,7 @@ title: "Line Intersection"
 pubDate: 2026-06-14
 tags: ["기하학"]
 difficulty: "Gold II"
+description: "CCW를 이용해 두 선분이 교차하는지 판별하는 알고리즘"
 ---
 
 `Line Intersection`은 두 선분이 교차하는지 판별하는 알고리즘이다.

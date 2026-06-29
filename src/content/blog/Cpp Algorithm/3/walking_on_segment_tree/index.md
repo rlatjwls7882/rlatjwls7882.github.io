@@ -3,6 +3,7 @@ title: "Walking on Segment Tree"
 pubDate: 2026-06-14
 tags: ["자료 구조", "세그먼트 트리"]
 difficulty: "Platinum V"
+description: "세그먼트 트리의 누적 정보를 따라 내려가며 조건을 만족하는 위치를 찾는 테크닉"
 ---
 
 `Walking on Segment Tree`는 세그먼트 트리의 값을 이용해 루트에서 리프까지 내려가는 테크닉이다.

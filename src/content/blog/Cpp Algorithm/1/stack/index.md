@@ -3,6 +3,7 @@ title: "Stack"
 pubDate: 2026-05-31
 tags: ["자료 구조"]
 difficulty: "Silver IV"
+description: "가장 나중에 넣은 원소를 먼저 꺼내는 후입선출 자료구조"
 ---
 
 `stack`은 가장 나중에 넣은 원소를 가장 먼저 꺼내는 자료구조이다.

@@ -3,6 +3,7 @@ title: "Segment Tree with Lazy Propagation"
 pubDate: 2026-06-14
 tags: ["자료 구조", "세그먼트 트리"]
 difficulty: "Platinum IV"
+description: "세그먼트 트리에서 구간 업데이트를 지연 처리해 구간 연산을 효율적으로 수행하는 테크닉"
 ---
 
 Lazy Propagation은 세그먼트 트리에서 구간 업데이트를 빠르게 처리하는 방법이다.

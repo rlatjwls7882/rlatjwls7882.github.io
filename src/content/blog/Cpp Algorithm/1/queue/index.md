@@ -3,6 +3,7 @@ title: "Queue"
 pubDate: 2026-06-01
 tags: ["자료 구조"]
 difficulty: "Silver IV"
+description: "가장 먼저 넣은 원소를 먼저 꺼내는 선입선출 자료구조"
 ---
 
 `queue`는 먼저 넣은 원소를 먼저 꺼내는 자료구조이다.

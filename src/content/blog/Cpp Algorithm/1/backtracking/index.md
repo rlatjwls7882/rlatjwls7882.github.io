@@ -3,6 +3,7 @@ title: "Backtracking"
 pubDate: 2026-06-04
 tags: ["탐색"]
 difficulty: "Silver III"
+description: "가능한 선택을 탐색하되 조건을 만족할 수 없는 경로를 미리 가지치기하는 완전 탐색 기법"
 ---
 
 백트래킹은 가능한 선택을 하나씩 시도하고 이전 상태로 돌아가며 경우를 탐색하는 알고리즘이다.

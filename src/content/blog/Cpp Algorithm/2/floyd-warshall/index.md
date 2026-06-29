@@ -3,6 +3,7 @@ title: "Floyd-Warshall Algorithm"
 pubDate: 2026-06-10
 tags: ["그래프", "최단 경로"]
 difficulty: "Gold IV"
+description: "모든 정점 쌍 사이의 최단 거리를 DP로 구하는 알고리즘"
 ---
 
 플로이드-워셜은 모든 정점 쌍 사이의 최단 거리를 구하는 알고리즘이다.

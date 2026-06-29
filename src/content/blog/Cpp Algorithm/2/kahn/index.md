@@ -3,6 +3,7 @@ title: "Kahn's Algorithm"
 pubDate: 2026-06-11
 tags: ["그래프", "위상 정렬"]
 difficulty: "Gold III"
+description: "진입 차수가 0인 정점을 차례대로 제거해 위상 순서를 구하는 알고리즘"
 ---
 
 `Kahn` 알고리즘은 `DAG`에서 위상 정렬을 구하는 알고리즘이다.

@@ -3,6 +3,7 @@ title: "Segment Tree"
 pubDate: 2026-06-14
 tags: ["자료 구조", "세그먼트 트리"]
 difficulty: "Gold I"
+description: "구간 정보를 트리 형태로 저장해 구간 쿼리와 점 업데이트를 처리하는 자료구조"
 ---
 
 세그먼트 트리는 배열의 구간 정보를 저장하는 자료구조이다.

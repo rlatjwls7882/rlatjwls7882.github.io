@@ -3,6 +3,7 @@ title: "Sieve of Eratosthenes"
 pubDate: 2026-06-08
 tags: ["정수론"]
 difficulty: "Silver III"
+description: "배수를 지워가며 일정 범위 안의 소수를 한 번에 구하는 전처리 알고리즘"
 ---
 
 에라토스테네스의 체는 $1$부터 $n$까지의 소수를 한 번에 구하는 알고리즘이다.

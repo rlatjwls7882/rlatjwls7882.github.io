@@ -3,6 +3,7 @@ title: "Dynamic Segment Tree"
 pubDate: 2026-06-14
 tags: ["자료 구조", "세그먼트 트리"]
 difficulty: "Platinum V"
+description: "세그먼트 트리에서 필요한 노드만 생성해 큰 좌표 범위의 구간 쿼리를 처리하는 테크닉"
 ---
 
 Dynamic Segment Tree는 필요한 노드만 생성하는 세그먼트 트리이다.

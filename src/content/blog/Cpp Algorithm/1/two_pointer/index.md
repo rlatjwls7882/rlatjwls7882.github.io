@@ -3,6 +3,7 @@ title: "Two Pointer"
 pubDate: 2026-06-04
 tags: ["탐색"]
 difficulty: "Silver III"
+description: "두 포인터를 한 방향으로 이동시키며 조건을 만족하는 구간이나 쌍을 찾는 기법"
 ---
 
 투 포인터는 두 개의 포인터를 이동시키며 조건을 만족하는 값을 찾는 알고리즘이다.
@@ -62,7 +63,6 @@ int cnt=0, left=0, right=n-1;
 
 while(left<right) {
     int sum=a[left]+a[right];
-
     if(sum<x) {
         left++;
     } else if(sum>x) {

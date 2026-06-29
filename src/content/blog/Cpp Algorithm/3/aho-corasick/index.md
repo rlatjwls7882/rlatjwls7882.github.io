@@ -3,6 +3,7 @@ title: "Aho-Corasick"
 pubDate: 2026-06-14
 tags: ["문자열", "트라이"]
 difficulty: "Platinum II"
+description: "Trie에 실패 링크를 추가해 여러 패턴을 한 번에 탐색하는 문자열 알고리즘"
 ---
 
 아호-코라식은 여러 패턴을 동시에 찾는 문자열 탐색 알고리즘이다.

@@ -3,6 +3,7 @@ title: "Dijkstra's Algorithm"
 pubDate: 2026-06-09
 tags: ["그래프", "최단 경로"]
 difficulty: "Gold IV"
+description: "음수 간선이 없는 그래프에서 시작점으로부터의 최단 거리를 구하는 알고리즘"
 ---
 
 다익스트라는 음수 간선이 없는 그래프에서 시작 정점으로부터의 최단 거리를 구하는 알고리즘이다.

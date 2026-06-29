@@ -3,6 +3,7 @@ title: "Bellman-Ford Algorithm"
 pubDate: 2026-06-10
 tags: ["그래프", "최단 경로"]
 difficulty: "Gold IV"
+description: "간선을 반복적으로 완화해 최단 거리와 음수 사이클을 판별하는 알고리즘"
 ---
 
 벨만-포드는 시작 정점으로부터의 최단 거리를 구하는 알고리즘이다.

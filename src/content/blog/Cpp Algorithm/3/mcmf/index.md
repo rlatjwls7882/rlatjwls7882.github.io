@@ -3,6 +3,7 @@ title: "MCMF (Min-Cost Max-Flow)"
 pubDate: 2026-06-11
 tags: ["그래프", "최대 유량"]
 difficulty: "Platinum III"
+description: "SPFA로 최단 비용 증가 경로를 반복해서 찾아 최소 비용 유량을 구하는 알고리즘"
 ---
 
 `MCMF`는 `source`에서 `sink`까지 보낼 수 있는 유량을 최대화하면서 전체 비용을 최소화하는 알고리즘이다.

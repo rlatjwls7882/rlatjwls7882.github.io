@@ -3,6 +3,7 @@ title: "Rope"
 pubDate: 2026-06-14
 tags: ["자료 구조", "문자열"]
 difficulty: "Platinum I"
+description: "긴 문자열의 삽입 삭제와 부분 문자열 연산을 빠르게 처리하는 자료구조"
 ---
 
 `Rope`는 긴 문자열을 여러 조각으로 나누어 저장하는 자료구조이다.

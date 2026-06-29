@@ -3,6 +3,7 @@ title: "Modular Multiplicative Inverse"
 pubDate: 2026-06-09
 tags: ["정수론"]
 difficulty: "Gold III"
+description: "모듈러 나눗셈을 곱셈으로 바꾸기 위한 역원을 구하는 알고리즘"
 ---
 
 모듈러 곱셈의 역원은 모듈러 연산에서 나눗셈을 처리할 때 사용한다.

@@ -3,6 +3,7 @@ title: "Deque"
 pubDate: 2026-06-01
 tags: ["자료 구조"]
 difficulty: "Silver IV"
+description: "양쪽 끝에서 원소를 넣고 뺄 수 있는 자료구조"
 ---
 
 `deque`는 양쪽 끝에서 원소를 추가하거나 삭제할 수 있는 자료구조이다.

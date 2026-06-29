@@ -3,6 +3,7 @@ title: "Rabin-Karp Algorithm"
 pubDate: 2026-06-13
 tags: ["문자열", "해싱"]
 difficulty: "Platinum V"
+description: "Rolling Hash로 문자열 비교를 빠르게 처리하는 문자열 탐색 기법"
 ---
 
 라빈-카프는 문자열을 해시값으로 바꾸어 패턴을 찾는 알고리즘이다.

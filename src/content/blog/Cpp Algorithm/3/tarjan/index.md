@@ -3,6 +3,7 @@ title: "Tarjan's Algorithm"
 pubDate: 2026-06-12
 tags: ["그래프", "DFS"]
 difficulty: "Platinum V"
+description: "DFS 순서로 SCC (Strongly Connected Component)를 찾는 알고리즘"
 ---
 
 `Tarjan` 알고리즘은 방향 그래프의 `SCC`를 한 번의 `DFS`로 찾는 알고리즘이다.

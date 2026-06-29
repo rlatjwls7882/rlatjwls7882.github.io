@@ -3,6 +3,7 @@ title: "KMP (Knuth-Morris-Pratt) Algorithm"
 pubDate: 2026-06-13
 tags: ["문자열"]
 difficulty: "Platinum V"
+description: "실패 함수를 이용해 문자열 패턴을 선형 시간에 찾는 알고리즘"
 ---
 
 `KMP`는 문자열에서 패턴이 나타나는 위치를 찾는 알고리즘이다.

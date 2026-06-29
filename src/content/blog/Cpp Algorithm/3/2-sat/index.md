@@ -3,6 +3,7 @@ title: "2-SAT (2-Satisfiability)"
 pubDate: 2026-06-12
 tags: ["그래프", "DFS"]
 difficulty: "Platinum IV"
+description: "2-CNF를 Implication Graph로 바꾸고 SCC로 만족 가능성을 판별하는 알고리즘"
 ---
 
 `2-SAT`은 각 절에 리터럴이 두 개씩 포함된 논리식이 주어졌을 때 식을 만족하는 값 할당이 존재하는지 판별하는 문제이다.

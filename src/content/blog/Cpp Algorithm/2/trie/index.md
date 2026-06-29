@@ -3,6 +3,7 @@ title: "Trie"
 pubDate: 2026-06-14
 tags: ["자료 구조", "문자열"]
 difficulty: "Platinum IV"
+description: "문자열을 공통 접두사 단위로 저장하고 탐색하는 자료구조"
 ---
 
 `Trie`는 여러 문자열을 공통 접두사 단위로 묶어 저장하는 자료구조이다.

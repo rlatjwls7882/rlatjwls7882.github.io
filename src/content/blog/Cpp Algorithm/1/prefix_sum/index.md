@@ -3,6 +3,7 @@ title: "Prefix Sum"
 pubDate: 2026-06-04
 tags: ["구간 처리"]
 difficulty: "Silver III"
+description: "누적 값을 미리 저장해 구간 합을 빠르게 구하는 전처리 기법"
 ---
 
 누적 합은 각 위치까지의 합을 미리 계산하는 방법이다.

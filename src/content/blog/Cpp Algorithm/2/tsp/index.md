@@ -3,6 +3,7 @@ title: "TSP (Traveling Salesman Problem)"
 pubDate: 2026-06-13
 tags: ["동적 계획법", "비트마스킹"]
 difficulty: "Gold I"
+description: "비트마스크 DP로 모든 도시를 방문하고 돌아오는 최소 비용 경로를 구하는 알고리즘"
 ---
 
 `TSP`는 모든 도시를 한 번씩 방문하고 시작 도시로 돌아오는 최소 비용을 구하는 문제이다.

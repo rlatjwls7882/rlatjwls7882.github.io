@@ -3,6 +3,7 @@ title: "Graham's Scan"
 pubDate: 2026-06-14
 tags: ["기하학"]
 difficulty: "Platinum V"
+description: "점들을 각도순으로 정렬한 뒤 반시계 방향을 유지하며 볼록 껍질을 구하는 알고리즘"
 ---
 
 Graham's Scan은 볼록 껍질을 구하는 알고리즘이다.

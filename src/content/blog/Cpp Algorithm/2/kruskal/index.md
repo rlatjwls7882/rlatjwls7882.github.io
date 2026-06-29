@@ -3,6 +3,7 @@ title: "Kruskal's Algorithm"
 pubDate: 2026-06-11
 tags: ["그래프", "최소 스패닝 트리"]
 difficulty: "Gold IV"
+description: "가중치가 작은 간선부터 선택해 최소 스패닝 트리를 만드는 알고리즘"
 ---
 
 크루스칼은 그래프의 모든 정점을 최소 비용으로 연결하는 알고리즘이다.

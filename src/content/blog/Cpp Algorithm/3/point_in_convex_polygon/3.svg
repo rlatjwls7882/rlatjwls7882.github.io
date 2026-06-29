@@ -1,15 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="790" height="460" viewBox="0 0 790 460"><rect width="100%" height="100%" fill="white"/><style>
-text{font-family:"JetBrains Mono","Consolas","Noto Sans Mono CJK KR",monospace;fill:#202020}
-.label{font-size:18px}.small{font-size:14px;fill:#555}.tiny{font-size:13px;fill:#555}
-.point{fill:white;stroke:#202020;stroke-width:2}.pointHi{fill:#eee;stroke:#202020;stroke-width:2.6}
-.query{fill:white;stroke:#202020;stroke-width:2.5}
-.poly{fill:none;stroke:#555;stroke-width:2.2}
-.tri{fill:#f7f7f7;stroke:#202020;stroke-width:2}
-.ray{fill:none;stroke:#777;stroke-width:1.6;stroke-dasharray:6 5}
-.rayHi{fill:none;stroke:#202020;stroke-width:3}
-.box{fill:white;stroke:#777;stroke-width:1.2;rx:5}.boxHi{fill:#eee;stroke:#202020;stroke-width:2;rx:5}
-.cell{fill:white;stroke:#777;stroke-width:1.2}.cellHi{fill:#eee;stroke:#202020;stroke-width:2}
-.arrow{fill:none;stroke:#202020;stroke-width:1.7;marker-end:url(#arrow)}
-</style><defs>
-<marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#202020"/></marker>
-</defs><polyline points="140,300 220,135 390,75 585,125 650,265 520,380 300,390 140,300" class="poly"/><circle cx="140" cy="300" r="8" class="pointHi"/><text x="140" y="284" text-anchor="middle" class="label">P0</text><circle cx="220" cy="135" r="8" class="pointHi"/><text x="220" y="119" text-anchor="middle" class="label">P1</text><circle cx="390" cy="75" r="8" class="point"/><text x="390" y="59" text-anchor="middle" class="label">P2</text><circle cx="585" cy="125" r="8" class="point"/><text x="585" y="109" text-anchor="middle" class="label">P3</text><circle cx="650" cy="265" r="8" class="point"/><text x="650" y="249" text-anchor="middle" class="label">P4</text><circle cx="520" cy="380" r="8" class="point"/><text x="520" y="364" text-anchor="middle" class="label">P5</text><circle cx="300" cy="390" r="8" class="pointHi"/><text x="300" y="374" text-anchor="middle" class="label">P6</text><circle cx="205" cy="70" r="8" class="query"/><text x="205" y="54" text-anchor="middle" class="label">P</text><line x1="140" y1="300" x2="220" y2="135" class="rayHi"/><line x1="140" y1="300" x2="300" y2="390" class="rayHi"/><line x1="140" y1="300" x2="205" y2="70" class="ray"/><rect x="420" y="55" width="250" height="42" class="boxHi"/><text x="545.0" y="82.0" text-anchor="middle" class="label">outside wedge</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="520" viewBox="0 0 740 520"><rect width="100%" height="100%" fill="white"/>
+<style>
+text{font-family:"Noto Sans CJK KR","Malgun Gothic",Arial,sans-serif;fill:#202020}
+.poly{fill:none;stroke:#333;stroke-width:1.8}
+.vec{stroke:#202020;stroke-width:2.4;marker-end:url(#arrow)}
+.vec2{stroke:#666;stroke-width:1.8;marker-end:url(#arrow2)}
+.node{fill:white;stroke:#333;stroke-width:1.5}
+.point{fill:#202020;stroke:#202020;stroke-width:1.5}
+.hi{fill:#efefef;stroke:#111;stroke-width:2}
+.label{font-size:15px}
+.small{font-size:13px;fill:#555}
+</style>
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<path d="M0,0 L0,6 L9,3 z" fill="#202020"/>
+</marker>
+<marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+</marker>
+</defs>
+<polygon points="145,360 325,455 570,370 610,180 430,85 230,145" class="poly"/><circle cx="145" cy="360" r="21" class="hi"/><text x="145" y="365" text-anchor="middle" class="label">P0</text><circle cx="325" cy="455" r="21" class="node"/><text x="325" y="460" text-anchor="middle" class="label">P1</text><circle cx="570" cy="370" r="21" class="node"/><text x="570" y="375" text-anchor="middle" class="label">P2</text><circle cx="610" cy="180" r="21" class="hi"/><text x="610" y="185" text-anchor="middle" class="label">P3</text><circle cx="430" cy="85" r="21" class="node"/><text x="430" y="90" text-anchor="middle" class="label">P4</text><circle cx="230" cy="145" r="21" class="node"/><text x="230" y="150" text-anchor="middle" class="label">P5</text><circle cx="390" cy="285" r="6" class="point"/><text x="406" y="275" class="label">P</text><line x1="145" y1="360" x2="610" y2="180" class="vec"/><line x1="145" y1="360" x2="390" y2="285" class="vec2"/><text x="325" y="491" text-anchor="middle" class="small">left</text><text x="230" y="115" text-anchor="middle" class="small">right</text><text x="610" y="150" text-anchor="middle" class="small">mid</text></svg>

@@ -3,6 +3,7 @@ title: "SPFA (Shortest Path Faster Algorithm)"
 pubDate: 2026-06-10
 tags: ["그래프", "최단 경로"]
 difficulty: "Gold IV"
+description: "갱신이 필요한 정점만 큐에 넣어 Bellman-Ford를 최적화하는 최단 거리 알고리즘"
 ---
 
 `SPFA`는 벨만-포드를 기반으로 시작 정점으로부터의 최단 거리를 구하는 알고리즘이다.

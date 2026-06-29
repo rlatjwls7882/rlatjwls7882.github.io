@@ -3,6 +3,7 @@ title: "CCW (Counter-Clockwise)"
 pubDate: 2026-06-14
 tags: ["기하학"]
 difficulty: "Gold V"
+description: "세 점의 방향 관계를 외적으로 판별하는 알고리즘"
 ---
 
 `CCW`는 세 점의 방향을 판별하는 알고리즘이다.

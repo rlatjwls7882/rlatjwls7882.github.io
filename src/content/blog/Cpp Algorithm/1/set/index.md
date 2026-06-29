@@ -3,6 +3,7 @@ title: "Set"
 pubDate: 2026-06-01
 tags: ["자료 구조"]
 difficulty: "Silver V"
+description: "중복 없는 원소를 저장하고 탐색하는 자료구조"
 ---
 
 `set`은 중복되지 않는 원소를 정렬된 상태로 저장하는 자료구조이다.

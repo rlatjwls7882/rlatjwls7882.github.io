@@ -3,6 +3,7 @@ title: "Binary Search"
 pubDate: 2026-06-03
 tags: ["탐색"]
 difficulty: "Silver IV"
+description: "정렬된 데이터에서 탐색 구간을 절반씩 줄이며 원하는 위치를 찾는 알고리즘"
 ---
 
 이분 탐색은 정렬된 배열에서 탐색 범위를 절반씩 줄이는 알고리즘이다.

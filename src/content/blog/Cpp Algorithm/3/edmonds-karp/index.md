@@ -3,6 +3,7 @@ title: "Edmonds-Karp Algorithm"
 pubDate: 2026-06-11
 tags: ["그래프", "최대 유량"]
 difficulty: "Platinum IV"
+description: "BFS로 가장 짧은 증가 경로를 반복해서 찾아 최대 유량을 구하는 알고리즘"
 ---
 
 `Edmonds-Karp`는 `source`에서 `sink`까지 보낼 수 있는 최대 유량을 구하는 알고리즘이다.

@@ -3,6 +3,7 @@ title: "Merge Sort Tree"
 pubDate: 2026-06-14
 tags: ["자료 구조", "세그먼트 트리"]
 difficulty: "Platinum III"
+description: "세그먼트 트리의 각 노드에 정렬된 배열을 저장해 구간에서 특정 값보다 큰(또는 작은) 원소의 개수를 빠르게 구하는 자료구조"
 ---
 
 Merge Sort Tree는 세그먼트 트리의 각 노드에 정렬된 배열을 저장하는 자료구조이다.
