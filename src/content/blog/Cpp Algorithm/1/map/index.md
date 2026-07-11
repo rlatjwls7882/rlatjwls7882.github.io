@@ -4,23 +4,12 @@ pubDate: 2026-06-01
 tags: ["자료 구조"]
 difficulty: "Silver V"
 description: "키와 값을 쌍으로 저장하고 키를 기준으로 탐색하는 자료구조"
+complexity: '연산당 $O(\log N)$'
 ---
 
 `map`은 키와 값을 쌍으로 저장하는 자료구조이다.
 
 각 키는 하나만 존재하고 키를 이용해 값을 찾을 수 있다.
-
-## 헤더 파일
-
-```cpp
-#include<map>
-```
-
-PS에서는 보통 다음 헤더 파일을 사용한다.
-
-```cpp
-#include<bits/stdc++.h>
-```
 
 ## 선언
 

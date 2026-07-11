@@ -4,6 +4,7 @@ pubDate: 2026-06-08
 tags: ["정수론"]
 difficulty: "Bronze I"
 description: "나머지 연산을 반복해 두 수의 최대공약수를 구하는 알고리즘"
+complexity: '$O(\log(\min(A,B)))$'
 ---
 
 유클리드 호제법은 나머지 연산을 반복해 두 수의 최대공약수를 구하는 알고리즘이다.

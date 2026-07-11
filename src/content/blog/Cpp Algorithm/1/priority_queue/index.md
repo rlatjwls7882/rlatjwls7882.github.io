@@ -4,23 +4,12 @@ pubDate: 2026-06-01
 tags: ["자료 구조"]
 difficulty: "Silver II"
 description: "우선순위가 가장 높은 원소를 먼저 꺼내는 자료구조"
+complexity: '연산당 $O(\log N)$'
 ---
 
 `priority_queue`는 우선순위가 가장 높은 원소부터 꺼내는 자료구조이다.
 
 C++에서는 기본적으로 값이 큰 원소가 먼저 나온다.
-
-## 헤더 파일
-
-```cpp
-#include<queue>
-```
-
-PS에서는 보통 다음 헤더 파일을 사용한다.
-
-```cpp
-#include<bits/stdc++.h>
-```
 
 ## 선언
 

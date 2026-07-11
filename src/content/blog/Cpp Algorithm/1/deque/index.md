@@ -4,23 +4,12 @@ pubDate: 2026-06-01
 tags: ["자료 구조"]
 difficulty: "Silver IV"
 description: "양쪽 끝에서 원소를 넣고 뺄 수 있는 자료구조"
+complexity: '연산당 $O(1)$'
 ---
 
 `deque`는 양쪽 끝에서 원소를 추가하거나 삭제할 수 있는 자료구조이다.
 
 앞과 뒤를 모두 사용할 수 있고 인덱스로 원소에 접근할 수도 있다.
-
-## 헤더 파일
-
-```cpp
-#include<deque>
-```
-
-PS에서는 보통 다음 헤더 파일을 사용한다.
-
-```cpp
-#include<bits/stdc++.h>
-```
 
 ## 선언
 

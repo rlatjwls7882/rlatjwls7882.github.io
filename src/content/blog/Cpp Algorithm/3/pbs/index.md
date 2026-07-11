@@ -4,6 +4,7 @@ pubDate: 2026-06-28
 tags: ["쿼리 처리", "탐색"]
 difficulty: "Platinum I"
 description: "여러 쿼리의 이분 탐색을 같은 mid끼리 묶어 한 번에 검증하는 기법"
+complexity: '$O((N+Q)\log C)$ ($C$: 최대 이분탐색 범위)'
 ---
 
 `PBS`는 여러 쿼리의 이분 탐색을 동시에 처리하는 기법이다.

@@ -4,6 +4,7 @@ pubDate: 2026-06-07
 tags: ["구간 처리"]
 difficulty: "Platinum IV"
 description: "차분 배열에 변화량을 기록한 뒤 누적 합으로 전체 값을 복원하는 기법"
+complexity: '전처리 $O(N^D)$ ($N$: 각 차원의 크기, $D$: 차원 수)'
 ---
 
 `Imos Method`는 여러 구간에 값을 더한 뒤 최종 상태를 빠르게 구하는 방법이다.

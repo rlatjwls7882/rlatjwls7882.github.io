@@ -4,6 +4,7 @@ pubDate: 2026-06-08
 tags: ["정수론"]
 difficulty: "Silver I"
 description: "지수를 절반씩 줄이며 거듭제곱을 빠르게 계산하는 알고리즘"
+complexity: '$O(\log N)$'
 ---
 
 빠른 거듭제곱은 $a^b$를 $O(\log b)$에 계산하는 알고리즘이다.

@@ -3,6 +3,7 @@ export const list = [
     title: '기초 알고리즘',
     path: '1',
     items: [
+      `io`,
       'vector',
       'stack',
       'queue',

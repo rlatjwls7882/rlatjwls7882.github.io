@@ -4,6 +4,7 @@ pubDate: 2026-06-02
 tags: ["자료 구조"]
 difficulty: "Gold V"
 description: "서로소 집합을 관리하며 두 원소의 연결 여부를 빠르게 처리하는 자료구조"
+complexity: '연산당 $O(\alpha(N))$'
 ---
 
 `DSU`는 서로 겹치지 않는 집합을 관리하는 자료구조이다.

@@ -3,7 +3,8 @@ title: "Dinic's Algorithm"
 pubDate: 2026-06-11
 tags: ["그래프", "최대 유량"]
 difficulty: "Platinum II"
-description: "레벨 그래프와 blocking flow를 이용해 최대 유량을 빠르게 구하는 알고리즘	"
+description: "레벨 그래프와 blocking flow를 이용해 최대 유량을 빠르게 구하는 알고리즘"
+complexity: '$O(V^2E)$'
 ---
 
 `Dinic`은 `source`에서 `sink`까지 보낼 수 있는 최대 유량을 구하는 알고리즘이다.

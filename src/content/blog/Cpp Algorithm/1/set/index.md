@@ -4,23 +4,12 @@ pubDate: 2026-06-01
 tags: ["자료 구조"]
 difficulty: "Silver V"
 description: "중복 없는 원소를 저장하고 탐색하는 자료구조"
+complexity: '연산당 $O(\log N)$'
 ---
 
 `set`은 중복되지 않는 원소를 정렬된 상태로 저장하는 자료구조이다.
 
 같은 값을 여러 번 추가해도 하나만 저장된다.
-
-## 헤더 파일
-
-```cpp
-#include<set>
-```
-
-PS에서는 보통 다음 헤더 파일을 사용한다.
-
-```cpp
-#include<bits/stdc++.h>
-```
 
 ## 선언
 

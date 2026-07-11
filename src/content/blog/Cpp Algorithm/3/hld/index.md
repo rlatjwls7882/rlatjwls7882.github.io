@@ -4,6 +4,7 @@ pubDate: 2026-06-14
 tags: ["자료 구조", "세그먼트 트리"]
 difficulty: "Platinum I"
 description: "트리 경로를 여러 개의 연속 구간으로 나누어 처리하는 알고리즘"
+complexity: '구축 $O(N)$, 쿼리 $O(\log^2 N)$'
 ---
 
 `HLD`는 트리의 경로를 여러 개의 구간으로 나누는 알고리즘이다.

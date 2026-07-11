@@ -4,6 +4,7 @@ pubDate: 2026-06-14
 tags: ["쿼리 처리"]
 difficulty: "Platinum II"
 description: "구간 쿼리를 제곱근 분할 기준으로 정렬해 이동량을 줄이는 오프라인 알고리즘"
+complexity: '$O((N+Q)\sqrt N+Q\log Q)$'
 ---
 
 `Mo's Algorithm`은 값이 바뀌지 않는 배열에서 여러 구간 쿼리를 빠르게 처리하는 알고리즘이다.

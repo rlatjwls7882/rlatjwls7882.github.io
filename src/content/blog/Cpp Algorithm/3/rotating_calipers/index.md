@@ -4,6 +4,7 @@ pubDate: 2026-06-14
 tags: ["기하학"]
 difficulty: "Platinum III"
 description: "볼록 껍질 위의 가장 먼 두 점을 두 포인터를 회전시키며 찾는 기법"
+complexity: '$O(N)$'
 ---
 
 Rotating Calipers는 볼록 다각형에서 서로 가장 먼 두 점을 찾는 알고리즘이다.

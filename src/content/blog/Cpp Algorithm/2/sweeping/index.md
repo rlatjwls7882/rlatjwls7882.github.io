@@ -4,6 +4,7 @@ pubDate: 2026-06-06
 tags: ["구간 처리", "정렬"]
 difficulty: "Gold V"
 description: "이벤트를 정렬한 뒤 한 방향으로 훑으며 처리하는 기법"
+complexity: '정렬 $O(N\log N)$, 스캔 $O(N)$'
 ---
 
 스위핑은 데이터를 정렬한 뒤 한 방향으로 훑으며 답을 구하는 알고리즘이다.

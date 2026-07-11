@@ -4,6 +4,7 @@ pubDate: 2026-06-26
 tags: ["쿼리 처리"]
 difficulty: "Platinum II"
 description: "배열을 블록으로 나누고 블록 정보를 이용해 구간 쿼리와 업데이트를 처리하는 기법"
+complexity: '업데이트/쿼리 $O(\sqrt N)$'
 ---
 
 `Square Root Decomposition`은 배열을 일정한 크기의 블록으로 나누어 쿼리를 빠르게 처리하는 기법이다.

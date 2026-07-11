@@ -4,23 +4,12 @@ pubDate: 2026-05-27
 tags: ["자료 구조"]
 difficulty: "Bronze III"
 description: "동적 배열을 사용해 원소를 순서대로 저장하고 임의 접근을 빠르게 처리하는 자료구조"
+complexity: '연산당 $O(1)$'
 ---
 
 `vector`는 크기가 변할 수 있는 연속 배열이다.
 
 인덱스로 원소에 접근할 수 있고 뒤쪽에 원소를 추가하거나 삭제할 수 있다.
-
-## 헤더 파일
-
-```cpp
-#include<vector>
-```
-
-PS에서는 보통 다음 헤더 파일을 사용한다.
-
-```cpp
-#include<bits/stdc++.h>
-```
 
 ## 선언
 

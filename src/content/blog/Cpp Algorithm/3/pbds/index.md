@@ -4,6 +4,7 @@ pubDate: 2026-06-03
 tags: ["자료 구조"]
 difficulty: "Platinum V"
 description: "set에 순서 통계 연산을 추가한 균형 이진 탐색 트리 기반 자료구조"
+complexity: '연산당 $O(\log N)$'
 ---
 
 `PBDS`는 GNU C++에서 제공하는 자료구조 모음이다.

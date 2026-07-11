@@ -4,6 +4,7 @@ pubDate: 2026-06-29
 tags: ["동적 계획법"]
 difficulty: "Platinum II"
 description: "DP 식을 직선의 최솟값(또는 최댓값) 쿼리 형태로 변환하고 단조성을 이용해 최적화하는 기법"
+complexity: '직선 추가 전체 $O(N)$, 쿼리 $O(\log N)$'
 ---
 
 `CHT`는 여러 직선 중 특정 $x$에서의 최솟값이나 최댓값을 빠르게 구하는 기법이다.

@@ -4,6 +4,7 @@ pubDate: 2026-06-08
 tags: ["정수론"]
 difficulty: "Silver IV"
 description: "약수 존재 여부를 확인해 소수인지 판별하는 알고리즘"
+complexity: '$O(\sqrt N)$'
 ---
 
 소수는 $1$보다 크고 $1$과 자기 자신만을 약수로 갖는 정수이다.

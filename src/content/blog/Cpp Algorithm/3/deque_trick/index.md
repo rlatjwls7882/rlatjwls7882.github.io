@@ -4,6 +4,7 @@ pubDate: 2026-06-26
 tags: ["동적 계획법"]
 difficulty: "Platinum V"
 description: "단조성을 유지하는 덱으로 일정 범위의 최솟값(또는 최댓값) DP를 최적화하는 기법"
+complexity: '$O(N)$'
 ---
 
 `Deque Trick`은 후보를 덱에 저장하면서 필요 없는 후보를 제거하는 테크닉이다.

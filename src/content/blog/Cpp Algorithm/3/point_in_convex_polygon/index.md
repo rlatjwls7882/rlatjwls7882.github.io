@@ -4,6 +4,7 @@ pubDate: 2026-06-14
 tags: ["기하학"]
 difficulty: "Platinum III"
 description: "볼록 다각형에서 기준점을 잡고 이분 탐색으로 점의 포함 여부를 판별하는 알고리즘"
+complexity: '$O(\log N)$'
 ---
 
 `Point in Convex Polygon`은 점이 볼록 다각형 내부에 있는지 판별하는 알고리즘이다.

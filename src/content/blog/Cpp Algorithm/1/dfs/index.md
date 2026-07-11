@@ -4,6 +4,7 @@ pubDate: 2026-06-05
 tags: ["그래프", "탐색"]
 difficulty: "Silver II"
 description: "그래프에서 한 경로를 끝까지 따라간 뒤 되돌아오며 탐색하는 알고리즘"
+complexity: '$O(V+E)$'
 ---
 
 DFS는 그래프에서 한 경로를 가능한 깊게 탐색하는 알고리즘이다.

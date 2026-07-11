@@ -4,6 +4,7 @@ pubDate: 2026-06-14
 tags: ["자료 구조", "세그먼트 트리"]
 difficulty: "Platinum V"
 description: "부분합 정보를 저장해 누적 합과 점 업데이트를 빠르게 처리하는 자료구조"
+complexity: '쿼리/업데이트 $O(\log N)$'
 ---
 
 `Fenwick Tree`는 배열의 `prefix sum`을 빠르게 관리하는 자료구조이다.
